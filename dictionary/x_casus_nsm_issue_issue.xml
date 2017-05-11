@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Issue" max_length="40" name="x_casus_nsm_issue_issue" type="collection">
+        <element label="Cost" max_length="40" name="cost" type="currency"/>
+        <element label="Date/Time" max_length="40" name="date_time" type="glide_date_time"/>
+        <element label="Elasped Time to Close" max_length="40" name="elapsed_time" type="glide_time"/>
+        <element label="Labor Hours" max_length="20" name="labor_hours" type="decimal"/>
+        <element label="Notes" max_length="4000" name="notes" type="journal_input"/>
+        <element default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element choice="1" label="Priority" max_length="40" name="priority" type="choice">
+            <choice/>
+        </element>
+        <element label="Resolution" max_length="4000" name="resolution" type="journal_input"/>
+        <element choice="1" label="State" max_length="40" name="state" type="choice">
+            <choice/>
+        </element>
+        <element label="Subject" max_length="40" name="subject" type="string"/>
+    </element>
+</database>

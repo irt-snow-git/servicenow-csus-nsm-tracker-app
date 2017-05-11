@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Instrument" max_length="40" name="x_casus_nsm_issue_instrument" type="collection"/>
+</database>
