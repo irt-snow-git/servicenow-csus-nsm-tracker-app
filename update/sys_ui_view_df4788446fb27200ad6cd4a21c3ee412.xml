@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_view">
+    <sys_ui_view action="INSERT_OR_UPDATE">
+        <group/>
+        <hidden>false</hidden>
+        <name>User</name>
+        <roles/>
+        <sys_class_name>sys_ui_view</sys_class_name>
+        <sys_created_by>gg622</sys_created_by>
+        <sys_created_on>2017-05-12 23:27:16</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>df4788446fb27200ad6cd4a21c3ee412</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>User</sys_name>
+        <sys_package display_value="NSM Issue Tracker" source="x_casus_nsm_issue">510636e76fea3200ad6cd4a21c3ee48c</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="NSM Issue Tracker">510636e76fea3200ad6cd4a21c3ee48c</sys_scope>
+        <sys_update_name>sys_ui_view_df4788446fb27200ad6cd4a21c3ee412</sys_update_name>
+        <sys_updated_by>gg622</sys_updated_by>
+        <sys_updated_on>2017-05-12 23:27:16</sys_updated_on>
+        <title>User</title>
+        <user/>
+    </sys_ui_view>
+</record_update>

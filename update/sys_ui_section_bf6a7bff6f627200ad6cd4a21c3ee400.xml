@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_section caption="Closure Information" section_id="bf6a7bff6f627200ad6cd4a21c3ee400" sys_domain="global" table="x_casus_nsm_issue_issue" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>cost</element>
+            <position>0</position>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2017-05-12 22:56:13</sys_created_on>
+            <sys_id>a430c0c06fb27200ad6cd4a21c3ee476</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Closure Information" display_value="Closure Information" name="x_casus_nsm_issue_issue" sys_domain="global" view="Default view">bf6a7bff6f627200ad6cd4a21c3ee400</sys_ui_section>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2017-05-12 22:56:13</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>create_kb</element>
+            <position>1</position>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2017-05-12 22:56:13</sys_created_on>
+            <sys_id>2830c0c06fb27200ad6cd4a21c3ee476</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Closure Information" display_value="Closure Information" name="x_casus_nsm_issue_issue" sys_domain="global" view="Default view">bf6a7bff6f627200ad6cd4a21c3ee400</sys_ui_section>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2017-05-12 22:56:13</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>2</position>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2017-05-12 22:56:13</sys_created_on>
+            <sys_id>a830c0c06fb27200ad6cd4a21c3ee476</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Closure Information" display_value="Closure Information" name="x_casus_nsm_issue_issue" sys_domain="global" view="Default view">bf6a7bff6f627200ad6cd4a21c3ee400</sys_ui_section>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2017-05-12 22:56:13</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>labor_hours</element>
+            <position>3</position>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2017-05-12 22:56:13</sys_created_on>
+            <sys_id>2c30c0c06fb27200ad6cd4a21c3ee476</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Closure Information" display_value="Closure Information" name="x_casus_nsm_issue_issue" sys_domain="global" view="Default view">bf6a7bff6f627200ad6cd4a21c3ee400</sys_ui_section>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2017-05-12 22:56:13</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>elasped_time</element>
+            <position>4</position>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2017-05-12 22:56:13</sys_created_on>
+            <sys_id>ac30c0c06fb27200ad6cd4a21c3ee476</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Closure Information" display_value="Closure Information" name="x_casus_nsm_issue_issue" sys_domain="global" view="Default view">bf6a7bff6f627200ad6cd4a21c3ee400</sys_ui_section>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2017-05-12 22:56:13</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>5</position>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2017-05-12 22:56:13</sys_created_on>
+            <sys_id>2030c0c06fb27200ad6cd4a21c3ee477</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Closure Information" display_value="Closure Information" name="x_casus_nsm_issue_issue" sys_domain="global" view="Default view">bf6a7bff6f627200ad6cd4a21c3ee400</sys_ui_section>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2017-05-12 22:56:13</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>resolution</element>
+            <position>6</position>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2017-05-12 22:56:13</sys_created_on>
+            <sys_id>a030c0c06fb27200ad6cd4a21c3ee477</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Closure Information" display_value="Closure Information" name="x_casus_nsm_issue_issue" sys_domain="global" view="Default view">bf6a7bff6f627200ad6cd4a21c3ee400</sys_ui_section>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2017-05-12 22:56:13</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Closure Information</caption>
+            <header>false</header>
+            <name>x_casus_nsm_issue_issue</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2017-05-12 22:31:03</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_id>bf6a7bff6f627200ad6cd4a21c3ee400</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Closure Information</sys_name>
+            <sys_overrides display_value="">global</sys_overrides>
+            <sys_package display_value="NSM Issue Tracker" source="x_casus_nsm_issue">510636e76fea3200ad6cd4a21c3ee48c</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="NSM Issue Tracker">510636e76fea3200ad6cd4a21c3ee48c</sys_scope>
+            <sys_update_name>sys_ui_section_bf6a7bff6f627200ad6cd4a21c3ee400</sys_update_name>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2017-05-12 22:31:03</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

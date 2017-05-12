@@ -2,18 +2,34 @@
 <database>
     <element label="Issue" max_length="40" name="x_casus_nsm_issue_issue" type="collection">
         <element label="Cost" max_length="40" name="cost" type="currency"/>
-        <element label="Date/Time" max_length="40" name="date_time" type="glide_date_time"/>
-        <element label="Elasped Time to Close" max_length="40" name="elapsed_time" type="glide_time"/>
+        <element label="Create KB Article" max_length="40" name="create_kb" type="boolean"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" default="javascript:gs.nowDateTime()" dynamic_default_value="79cb83a85f220100a9ad2572f2b4773c" label="Date/Time" max_length="40" name="date_time" type="glide_date_time" use_dynamic_default="true"/>
+        <element label="Elasped Time to Close" max_length="40" name="elasped_time" type="glide_time"/>
+        <element label="Instrument" max_length="32" name="instrument" reference="x_casus_nsm_issue_instrument" type="reference"/>
         <element label="Labor Hours" max_length="20" name="labor_hours" type="decimal"/>
         <element label="Notes" max_length="4000" name="notes" type="journal_input"/>
-        <element default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
-        <element choice="1" label="Priority" max_length="40" name="priority" type="choice">
-            <choice/>
+        <element default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
+        <element choice="1" label="Priority" max_length="40" name="priority" type="integer">
+            <choice>
+                <element label="1 - Critical" value="1"/>
+                <element label="2 - Urgent" value="2"/>
+                <element label="3 - Routine" value="3"/>
+            </choice>
         </element>
         <element label="Resolution" max_length="4000" name="resolution" type="journal_input"/>
-        <element choice="1" label="State" max_length="40" name="state" type="choice">
-            <choice/>
+        <element choice="3" default="1" label="State" max_length="40" name="state" type="integer">
+            <choice>
+                <element label="Open" sequence="1" value="1"/>
+                <element label="Closed" sequence="2" value="2"/>
+            </choice>
         </element>
         <element label="Subject" max_length="40" name="subject" type="string"/>
+        <element default="javascript:gs.getUserID();" dynamic_default_value="2fd8e97bef3221002841f7f775c0fbc1" label="Submitter" max_length="32" name="submitter" reference="sys_user" type="reference" use_dynamic_default="true"/>
+        <index name="index">
+            <element name="submitter"/>
+        </index>
+        <index name="index2">
+            <element name="instrument"/>
+        </index>
     </element>
 </database>

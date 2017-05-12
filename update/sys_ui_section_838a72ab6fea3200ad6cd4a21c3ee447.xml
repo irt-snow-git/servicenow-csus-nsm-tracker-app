@@ -2,44 +2,44 @@
 <record_update>
     <sys_ui_section caption="" section_id="838a72ab6fea3200ad6cd4a21c3ee447" sys_domain="global" table="x_casus_nsm_issue_issue" version="3" view="">
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.begin_split</element>
+            <element>number</element>
             <position>0</position>
             <sys_created_by>gg622</sys_created_by>
-            <sys_created_on>2017-05-11 23:13:27</sys_created_on>
-            <sys_id>938a72ab6fea3200ad6cd4a21c3ee44a</sys_id>
+            <sys_created_on>2017-05-12 23:32:42</sys_created_on>
+            <sys_id>c38800846fb27200ad6cd4a21c3ee4c8</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_casus_nsm_issue_issue" sys_domain="global" view="Default view">838a72ab6fea3200ad6cd4a21c3ee447</sys_ui_section>
             <sys_updated_by>gg622</sys_updated_by>
-            <sys_updated_on>2017-05-11 23:13:27</sys_updated_on>
-            <sys_user/>
-            <type>.begin_split</type>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>number</element>
-            <position>1</position>
-            <sys_created_by>gg622</sys_created_by>
-            <sys_created_on>2017-05-11 23:13:27</sys_created_on>
-            <sys_id>178a72ab6fea3200ad6cd4a21c3ee44a</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_casus_nsm_issue_issue" sys_domain="global" view="Default view">838a72ab6fea3200ad6cd4a21c3ee447</sys_ui_section>
-            <sys_updated_by>gg622</sys_updated_by>
-            <sys_updated_on>2017-05-11 23:13:27</sys_updated_on>
+            <sys_updated_on>2017-05-12 23:32:42</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>date_time</element>
-            <position>2</position>
+            <element>submitter</element>
+            <position>1</position>
             <sys_created_by>gg622</sys_created_by>
-            <sys_created_on>2017-05-11 23:13:27</sys_created_on>
-            <sys_id>978a72ab6fea3200ad6cd4a21c3ee44a</sys_id>
+            <sys_created_on>2017-05-12 23:32:42</sys_created_on>
+            <sys_id>478800846fb27200ad6cd4a21c3ee4c8</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_casus_nsm_issue_issue" sys_domain="global" view="Default view">838a72ab6fea3200ad6cd4a21c3ee447</sys_ui_section>
             <sys_updated_by>gg622</sys_updated_by>
-            <sys_updated_on>2017-05-11 23:13:27</sys_updated_on>
+            <sys_updated_on>2017-05-12 23:32:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>instrument</element>
+            <position>2</position>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2017-05-12 23:32:42</sys_created_on>
+            <sys_id>c78800846fb27200ad6cd4a21c3ee4c8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_casus_nsm_issue_issue" sys_domain="global" view="Default view">838a72ab6fea3200ad6cd4a21c3ee447</sys_ui_section>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2017-05-12 23:32:42</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -47,139 +47,97 @@
             <element>.split</element>
             <position>3</position>
             <sys_created_by>gg622</sys_created_by>
-            <sys_created_on>2017-05-11 23:13:27</sys_created_on>
-            <sys_id>1b8a72ab6fea3200ad6cd4a21c3ee44a</sys_id>
+            <sys_created_on>2017-05-12 23:32:42</sys_created_on>
+            <sys_id>4b8800846fb27200ad6cd4a21c3ee4c8</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_casus_nsm_issue_issue" sys_domain="global" view="Default view">838a72ab6fea3200ad6cd4a21c3ee447</sys_ui_section>
             <sys_updated_by>gg622</sys_updated_by>
-            <sys_updated_on>2017-05-11 23:13:27</sys_updated_on>
+            <sys_updated_on>2017-05-12 23:32:42</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>priority</element>
+            <element>state</element>
             <position>4</position>
             <sys_created_by>gg622</sys_created_by>
-            <sys_created_on>2017-05-11 23:13:27</sys_created_on>
-            <sys_id>9b8a72ab6fea3200ad6cd4a21c3ee44a</sys_id>
+            <sys_created_on>2017-05-12 23:32:42</sys_created_on>
+            <sys_id>cb8800846fb27200ad6cd4a21c3ee4c8</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_casus_nsm_issue_issue" sys_domain="global" view="Default view">838a72ab6fea3200ad6cd4a21c3ee447</sys_ui_section>
             <sys_updated_by>gg622</sys_updated_by>
-            <sys_updated_on>2017-05-11 23:13:27</sys_updated_on>
+            <sys_updated_on>2017-05-12 23:32:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>priority</element>
+            <position>5</position>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2017-05-12 23:32:42</sys_created_on>
+            <sys_id>4f8800846fb27200ad6cd4a21c3ee4c8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_casus_nsm_issue_issue" sys_domain="global" view="Default view">838a72ab6fea3200ad6cd4a21c3ee447</sys_ui_section>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2017-05-12 23:32:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>date_time</element>
+            <position>6</position>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2017-05-12 23:32:42</sys_created_on>
+            <sys_id>cf8800846fb27200ad6cd4a21c3ee4c8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_casus_nsm_issue_issue" sys_domain="global" view="Default view">838a72ab6fea3200ad6cd4a21c3ee447</sys_ui_section>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2017-05-12 23:32:42</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.end_split</element>
-            <position>5</position>
+            <position>7</position>
             <sys_created_by>gg622</sys_created_by>
-            <sys_created_on>2017-05-11 23:13:27</sys_created_on>
-            <sys_id>1f8a72ab6fea3200ad6cd4a21c3ee44a</sys_id>
+            <sys_created_on>2017-05-12 23:32:42</sys_created_on>
+            <sys_id>438800846fb27200ad6cd4a21c3ee4c9</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_casus_nsm_issue_issue" sys_domain="global" view="Default view">838a72ab6fea3200ad6cd4a21c3ee447</sys_ui_section>
             <sys_updated_by>gg622</sys_updated_by>
-            <sys_updated_on>2017-05-11 23:13:27</sys_updated_on>
+            <sys_updated_on>2017-05-12 23:32:42</sys_updated_on>
             <sys_user/>
             <type>.end_split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>notes</element>
-            <position>6</position>
-            <sys_created_by>gg622</sys_created_by>
-            <sys_created_on>2017-05-11 23:13:27</sys_created_on>
-            <sys_id>9f8a72ab6fea3200ad6cd4a21c3ee44a</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_casus_nsm_issue_issue" sys_domain="global" view="Default view">838a72ab6fea3200ad6cd4a21c3ee447</sys_ui_section>
-            <sys_updated_by>gg622</sys_updated_by>
-            <sys_updated_on>2017-05-11 23:13:27</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>resolution</element>
-            <position>7</position>
-            <sys_created_by>gg622</sys_created_by>
-            <sys_created_on>2017-05-11 23:24:16</sys_created_on>
-            <sys_id>710db2ab6fea3200ad6cd4a21c3ee42a</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_casus_nsm_issue_issue" sys_domain="global" view="Default view">838a72ab6fea3200ad6cd4a21c3ee447</sys_ui_section>
-            <sys_updated_by>gg622</sys_updated_by>
-            <sys_updated_on>2017-05-11 23:24:16</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>cost</element>
+            <element>subject</element>
             <position>8</position>
             <sys_created_by>gg622</sys_created_by>
-            <sys_created_on>2017-05-11 23:24:17</sys_created_on>
-            <sys_id>fd0db2ab6fea3200ad6cd4a21c3ee42b</sys_id>
+            <sys_created_on>2017-05-12 23:32:42</sys_created_on>
+            <sys_id>c38800846fb27200ad6cd4a21c3ee4c9</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_casus_nsm_issue_issue" sys_domain="global" view="Default view">838a72ab6fea3200ad6cd4a21c3ee447</sys_ui_section>
             <sys_updated_by>gg622</sys_updated_by>
-            <sys_updated_on>2017-05-11 23:24:17</sys_updated_on>
+            <sys_updated_on>2017-05-12 23:32:42</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>labor_hours</element>
+            <element>notes</element>
             <position>9</position>
             <sys_created_by>gg622</sys_created_by>
-            <sys_created_on>2017-05-11 23:24:17</sys_created_on>
-            <sys_id>bd0db2ab6fea3200ad6cd4a21c3ee42d</sys_id>
+            <sys_created_on>2017-05-12 23:32:42</sys_created_on>
+            <sys_id>478800846fb27200ad6cd4a21c3ee4c9</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_casus_nsm_issue_issue" sys_domain="global" view="Default view">838a72ab6fea3200ad6cd4a21c3ee447</sys_ui_section>
             <sys_updated_by>gg622</sys_updated_by>
-            <sys_updated_on>2017-05-11 23:24:17</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>elapsed_time</element>
-            <position>10</position>
-            <sys_created_by>gg622</sys_created_by>
-            <sys_created_on>2017-05-11 23:24:17</sys_created_on>
-            <sys_id>4e0db2ab6fea3200ad6cd4a21c3ee42f</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_casus_nsm_issue_issue" sys_domain="global" view="Default view">838a72ab6fea3200ad6cd4a21c3ee447</sys_ui_section>
-            <sys_updated_by>gg622</sys_updated_by>
-            <sys_updated_on>2017-05-11 23:24:17</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>state</element>
-            <position>11</position>
-            <sys_created_by>gg622</sys_created_by>
-            <sys_created_on>2017-05-11 23:24:18</sys_created_on>
-            <sys_id>ca0db2ab6fea3200ad6cd4a21c3ee431</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_casus_nsm_issue_issue" sys_domain="global" view="Default view">838a72ab6fea3200ad6cd4a21c3ee447</sys_ui_section>
-            <sys_updated_by>gg622</sys_updated_by>
-            <sys_updated_on>2017-05-11 23:24:18</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>subject</element>
-            <position>12</position>
-            <sys_created_by>gg622</sys_created_by>
-            <sys_created_on>2017-05-11 23:24:18</sys_created_on>
-            <sys_id>4a0dfeab6fea3200ad6cd4a21c3ee413</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_casus_nsm_issue_issue" sys_domain="global" view="Default view">838a72ab6fea3200ad6cd4a21c3ee447</sys_ui_section>
-            <sys_updated_by>gg622</sys_updated_by>
-            <sys_updated_on>2017-05-11 23:24:18</sys_updated_on>
+            <sys_updated_on>2017-05-12 23:32:42</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

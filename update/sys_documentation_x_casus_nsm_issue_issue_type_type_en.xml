@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update>
-    <sys_documentation element="elapsed_time" label="Elasped Time to Close" language="en" table="x_casus_nsm_issue_issue">
+    <sys_documentation element="type" label="Type" language="en" table="x_casus_nsm_issue_issue_type">
         <sys_documentation action="INSERT_OR_UPDATE">
-            <element>elapsed_time</element>
+            <element>type</element>
             <help/>
             <hint/>
-            <label>Elasped Time to Close</label>
+            <label>Type</label>
             <language>en</language>
-            <name>x_casus_nsm_issue_issue</name>
-            <plural>Elasped Time to Closes</plural>
+            <name>x_casus_nsm_issue_issue_type</name>
+            <plural>Types</plural>
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>gg622</sys_created_by>
-            <sys_created_on>2017-05-11 23:24:18</sys_created_on>
+            <sys_created_on>2017-05-12 23:14:52</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
-            <sys_id>120dfeab6fea3200ad6cd4a21c3ee415</sys_id>
+            <sys_id>3d740c046fb27200ad6cd4a21c3ee40d</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_name>Elasped Time to Close</sys_name>
+            <sys_name>Type</sys_name>
             <sys_package display_value="NSM Issue Tracker" source="x_casus_nsm_issue">510636e76fea3200ad6cd4a21c3ee48c</sys_package>
             <sys_policy/>
             <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
             <sys_scope display_value="NSM Issue Tracker">510636e76fea3200ad6cd4a21c3ee48c</sys_scope>
-            <sys_update_name>sys_documentation_x_casus_nsm_issue_issue_elapsed_time_en</sys_update_name>
+            <sys_update_name>sys_documentation_x_casus_nsm_issue_issue_type_type_en</sys_update_name>
             <sys_updated_by>gg622</sys_updated_by>
-            <sys_updated_on>2017-05-11 23:24:18</sys_updated_on>
+            <sys_updated_on>2017-05-12 23:14:52</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>
