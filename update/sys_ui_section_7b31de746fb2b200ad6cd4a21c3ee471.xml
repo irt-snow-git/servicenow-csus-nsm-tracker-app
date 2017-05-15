@@ -1,6 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update>
     <sys_ui_section caption="" section_id="7b31de746fb2b200ad6cd4a21c3ee471" sys_domain="global" table="x_casus_nsm_issue_instrument" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>instrument_id</element>
+            <position>0</position>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2017-05-15 21:28:43</sys_created_on>
+            <sys_id>c8f8033c6ff2b200ad6cd4a21c3ee4d6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_casus_nsm_issue_instrument" sys_domain="global" view="Default view">7b31de746fb2b200ad6cd4a21c3ee471</sys_ui_section>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2017-05-15 21:28:43</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>model</element>
+            <position>1</position>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2017-05-15 21:28:44</sys_created_on>
+            <sys_id>4cf8033c6ff2b200ad6cd4a21c3ee4d6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_casus_nsm_issue_instrument" sys_domain="global" view="Default view">7b31de746fb2b200ad6cd4a21c3ee471</sys_ui_section>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2017-05-15 21:28:44</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>2</position>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2017-05-15 21:28:44</sys_created_on>
+            <sys_id>ccf8033c6ff2b200ad6cd4a21c3ee4d6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_casus_nsm_issue_instrument" sys_domain="global" view="Default view">7b31de746fb2b200ad6cd4a21c3ee471</sys_ui_section>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2017-05-15 21:28:44</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>serial_number</element>
+            <position>3</position>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2017-05-15 21:28:44</sys_created_on>
+            <sys_id>40f8033c6ff2b200ad6cd4a21c3ee4d7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_casus_nsm_issue_instrument" sys_domain="global" view="Default view">7b31de746fb2b200ad6cd4a21c3ee471</sys_ui_section>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2017-05-15 21:28:44</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>room</element>
+            <position>4</position>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2017-05-15 21:28:44</sys_created_on>
+            <sys_id>c0f8033c6ff2b200ad6cd4a21c3ee4d7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_casus_nsm_issue_instrument" sys_domain="global" view="Default view">7b31de746fb2b200ad6cd4a21c3ee471</sys_ui_section>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2017-05-15 21:28:44</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
             <caption/>
             <header>false</header>
