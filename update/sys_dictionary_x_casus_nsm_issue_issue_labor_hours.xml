@@ -14,7 +14,7 @@
         <choice/>
         <choice_field/>
         <choice_table/>
-        <column_label>Labor Hours</column_label>
+        <column_label>Labor hours</column_label>
         <comments/>
         <create_roles/>
         <default_value/>
@@ -53,15 +53,15 @@
         <sys_created_on>2017-05-11 23:24:17</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>cf9b72ab6fea3200ad6cd4a21c3ee479</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>Labor Hours</sys_name>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Labor hours</sys_name>
         <sys_package display_value="NSM Issue Tracker" source="x_casus_nsm_issue">510636e76fea3200ad6cd4a21c3ee48c</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="NSM Issue Tracker">510636e76fea3200ad6cd4a21c3ee48c</sys_scope>
         <sys_update_name>sys_dictionary_x_casus_nsm_issue_issue_labor_hours</sys_update_name>
-        <sys_updated_by>gg622</sys_updated_by>
-        <sys_updated_on>2017-05-11 23:24:17</sys_updated_on>
+        <sys_updated_by>longlim</sys_updated_by>
+        <sys_updated_on>2017-05-15 17:28:51</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

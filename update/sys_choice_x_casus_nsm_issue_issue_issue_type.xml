@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="issue_type" table="x_casus_nsm_issue_issue" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>issue_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Atomic Absorbance</label>
+            <language>en</language>
+            <name>x_casus_nsm_issue_issue</name>
+            <sequence>1</sequence>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2017-05-15 18:51:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>5fb4aa3c6fb2b200ad6cd4a21c3ee47e</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2017-05-15 18:57:55</sys_updated_on>
+            <value>atomic absorbance</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>issue_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Fluorescence Spectrophotometer</label>
+            <language>en</language>
+            <name>x_casus_nsm_issue_issue</name>
+            <sequence>2</sequence>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2017-05-15 18:51:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>09e4a23c6fb2b200ad6cd4a21c3ee47e</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2017-05-15 18:57:58</sys_updated_on>
+            <value>fluorescence spectrophotometer</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>issue_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>FT-IR</label>
+            <language>en</language>
+            <name>x_casus_nsm_issue_issue</name>
+            <sequence>3</sequence>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2017-05-15 18:52:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>62f4aaf86fb2b200ad6cd4a21c3ee429</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2017-05-15 18:58:04</sys_updated_on>
+            <value>FT-IR</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>issue_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Freeze Dryer</label>
+            <language>en</language>
+            <name>x_casus_nsm_issue_issue</name>
+            <sequence>4</sequence>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2017-05-15 18:52:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>f435a23c6fb2b200ad6cd4a21c3ee41d</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2017-05-15 18:59:47</sys_updated_on>
+            <value>freeze dryer</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>issue_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Gas Chromatography</label>
+            <language>en</language>
+            <name>x_casus_nsm_issue_issue</name>
+            <sequence>5</sequence>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2017-05-15 18:53:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>cc45ee3c6fb2b200ad6cd4a21c3ee48a</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2017-05-15 18:59:48</sys_updated_on>
+            <value>gas chromatography</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>issue_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Liquid Chromatography</label>
+            <language>en</language>
+            <name>x_casus_nsm_issue_issue</name>
+            <sequence>6</sequence>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2017-05-15 18:53:30</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>bc55ae3c6fb2b200ad6cd4a21c3ee45b</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2017-05-15 18:59:53</sys_updated_on>
+            <value>liquid chromatography</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>issue_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Microwave</label>
+            <language>en</language>
+            <name>x_casus_nsm_issue_issue</name>
+            <sequence>7</sequence>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2017-05-15 18:53:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>a665ae3c6fb2b200ad6cd4a21c3ee433</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2017-05-15 19:00:05</sys_updated_on>
+            <value>microwave</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>issue_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>NMR</label>
+            <language>en</language>
+            <name>x_casus_nsm_issue_issue</name>
+            <sequence>8</sequence>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2017-05-15 18:54:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>f675aa3c6fb2b200ad6cd4a21c3ee4f6</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2017-05-15 19:00:12</sys_updated_on>
+            <value>NMR</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>issue_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>UV-Vis</label>
+            <language>en</language>
+            <name>x_casus_nsm_issue_issue</name>
+            <sequence>9</sequence>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2017-05-15 18:54:12</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>0e85a27c6fb2b200ad6cd4a21c3ee4d2</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2017-05-15 19:00:15</sys_updated_on>
+            <value>UV-Vis</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>issue_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>LC-MS</label>
+            <language>en</language>
+            <name>x_casus_nsm_issue_issue</name>
+            <sequence>10</sequence>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2017-05-15 18:54:25</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>7895ae3c6fb2b200ad6cd4a21c3ee45d</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2017-05-15 19:00:16</sys_updated_on>
+            <value>LC-MS</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>issue_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Incubator</label>
+            <language>en</language>
+            <name>x_casus_nsm_issue_issue</name>
+            <sequence>11</sequence>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2017-05-15 18:55:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>9ea5aaf86fb2b200ad6cd4a21c3ee42b</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2017-05-15 19:00:19</sys_updated_on>
+            <value>incubator</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>issue_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Centrifuge</label>
+            <language>en</language>
+            <name>x_casus_nsm_issue_issue</name>
+            <sequence>12</sequence>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2017-05-15 18:54:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>7b95627c6fb2b200ad6cd4a21c3ee4ec</sys_id>
+            <sys_mod_count>5</sys_mod_count>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2017-05-15 19:00:21</sys_updated_on>
+            <value>centrifuge</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>issue_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Vacuum Pump</label>
+            <language>en</language>
+            <name>x_casus_nsm_issue_issue</name>
+            <sequence>13</sequence>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2017-05-15 18:55:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>60c56e3c6fb2b200ad6cd4a21c3ee468</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2017-05-15 19:00:24</sys_updated_on>
+            <value>vacuum pump</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>issue_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>DI Water System</label>
+            <language>en</language>
+            <name>x_casus_nsm_issue_issue</name>
+            <sequence>14</sequence>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2017-05-15 18:55:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>f4d5627c6fb2b200ad6cd4a21c3ee4ee</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2017-05-15 19:00:27</sys_updated_on>
+            <value>DI water system</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>issue_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Ice Machine</label>
+            <language>en</language>
+            <name>x_casus_nsm_issue_issue</name>
+            <sequence>15</sequence>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2017-05-15 18:55:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>fbd56a3c6fb2b200ad6cd4a21c3ee426</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2017-05-15 19:00:30</sys_updated_on>
+            <value>ice machine</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>issue_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Lab Equipment</label>
+            <language>en</language>
+            <name>x_casus_nsm_issue_issue</name>
+            <sequence>16</sequence>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2017-05-15 18:55:57</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>a2e5ee3c6fb2b200ad6cd4a21c3ee413</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2017-05-15 19:00:33</sys_updated_on>
+            <value>lab equipment</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>issue_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Computer Issue</label>
+            <language>en</language>
+            <name>x_casus_nsm_issue_issue</name>
+            <sequence>17</sequence>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2017-05-15 18:56:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>56f5667c6fb2b200ad6cd4a21c3ee4d5</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2017-05-15 19:00:35</sys_updated_on>
+            <value>computer issue</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>issue_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Printer Issue</label>
+            <language>en</language>
+            <name>x_casus_nsm_issue_issue</name>
+            <sequence>18</sequence>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2017-05-15 18:56:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>ed06a27c6fb2b200ad6cd4a21c3ee4d3</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2017-05-15 19:00:44</sys_updated_on>
+            <value>printer issue</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>issue_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Safety Concern</label>
+            <language>en</language>
+            <name>x_casus_nsm_issue_issue</name>
+            <sequence>19</sequence>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2017-05-15 18:57:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>3026667c6fb2b200ad6cd4a21c3ee452</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2017-05-15 19:00:47</sys_updated_on>
+            <value>safety concern</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>issue_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Facilities</label>
+            <language>en</language>
+            <name>x_casus_nsm_issue_issue</name>
+            <sequence>20</sequence>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2017-05-15 18:57:28</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>c846e67c6fb2b200ad6cd4a21c3ee4d4</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2017-05-15 19:00:50</sys_updated_on>
+            <value>facilities</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>issue_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Other</label>
+            <language>en</language>
+            <name>x_casus_nsm_issue_issue</name>
+            <sequence>21</sequence>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2017-05-15 18:57:40</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>6056e67c6fb2b200ad6cd4a21c3ee45b</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2017-05-15 19:00:53</sys_updated_on>
+            <value>other</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>issue_type</element>
+            <name>x_casus_nsm_issue_issue</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2017-05-15 18:51:13</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>01e46e3c6fb2b200ad6cd4a21c3ee4b6</sys_id>
+            <sys_mod_count>67</sys_mod_count>
+            <sys_name>issue_type</sys_name>
+            <sys_package display_value="NSM Issue Tracker" source="x_casus_nsm_issue">510636e76fea3200ad6cd4a21c3ee48c</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="NSM Issue Tracker">510636e76fea3200ad6cd4a21c3ee48c</sys_scope>
+            <sys_update_name>sys_choice_x_casus_nsm_issue_issue_issue_type</sys_update_name>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2017-05-15 19:00:53</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

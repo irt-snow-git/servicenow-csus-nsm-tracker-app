@@ -2,11 +2,36 @@
 <database>
     <element label="Issue" max_length="40" name="x_casus_nsm_issue_issue" type="collection">
         <element label="Cost" max_length="40" name="cost" type="currency"/>
-        <element label="Create KB Article" max_length="40" name="create_kb" type="boolean"/>
+        <element label="Create KB article" max_length="40" name="create_kb" type="boolean"/>
         <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" default="javascript:gs.nowDateTime()" dynamic_default_value="79cb83a85f220100a9ad2572f2b4773c" label="Date/Time" max_length="40" name="date_time" type="glide_date_time" use_dynamic_default="true"/>
         <element label="Elasped Time to Close" max_length="40" name="elasped_time" type="glide_time"/>
         <element label="Instrument" max_length="32" name="instrument" reference="x_casus_nsm_issue_instrument" type="reference"/>
-        <element label="Labor Hours" max_length="20" name="labor_hours" type="decimal"/>
+        <element choice="1" label="Issue type" mandatory="true" max_length="40" name="issue_type" type="string">
+            <choice>
+                <element label="Atomic Absorbance" sequence="1" value="atomic absorbance"/>
+                <element label="Fluorescence Spectrophotometer" sequence="2" value="fluorescence spectrophotometer"/>
+                <element label="FT-IR" sequence="3" value="FT-IR"/>
+                <element label="Freeze Dryer" sequence="4" value="freeze dryer"/>
+                <element label="Gas Chromatography" sequence="5" value="gas chromatography"/>
+                <element label="Liquid Chromatography" sequence="6" value="liquid chromatography"/>
+                <element label="Microwave" sequence="7" value="microwave"/>
+                <element label="NMR" sequence="8" value="NMR"/>
+                <element label="UV-Vis" sequence="9" value="UV-Vis"/>
+                <element label="LC-MS" sequence="10" value="LC-MS"/>
+                <element label="Incubator" sequence="11" value="incubator"/>
+                <element label="Centrifuge" sequence="12" value="centrifuge"/>
+                <element label="Vacuum Pump" sequence="13" value="vacuum pump"/>
+                <element label="DI Water System" sequence="14" value="DI water system"/>
+                <element label="Ice Machine" sequence="15" value="ice machine"/>
+                <element label="Lab Equipment" sequence="16" value="lab equipment"/>
+                <element label="Computer Issue" sequence="17" value="computer issue"/>
+                <element label="Printer Issue" sequence="18" value="printer issue"/>
+                <element label="Safety Concern" sequence="19" value="safety concern"/>
+                <element label="Facilities" sequence="20" value="facilities"/>
+                <element label="Other" sequence="21" value="other"/>
+            </choice>
+        </element>
+        <element label="Labor hours" max_length="20" name="labor_hours" type="decimal"/>
         <element label="Notes" max_length="4000" name="notes" type="journal_input"/>
         <element default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
         <element choice="1" label="Priority" max_length="40" name="priority" type="integer">
