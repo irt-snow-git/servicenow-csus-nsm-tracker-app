@@ -5,45 +5,134 @@
         <description>Angular Controller for the Submit Issue page. </description>
         <global>false</global>
         <name>x_casus_nsm_issue.angular_controller</name>
-        <script><![CDATA[var x_casus_nsm_issue = x_casus_nsm_issue || {};
+        <script><![CDATA[var myApp = angular.module('myApp', []);
+var instrumentReferences = [];//Global variable to hold array of instruments
+instrumentReferences = getInstrumentReferences();
 
-x_casus_nsm_issue.angular_controller = (function() {
-	"use strict";
-
-/* set your private variables and functions here. For example: 
-	var privateVar = 0; 
-	function private_function() {
-		return ++privateVar;
-	}
-*/
-
-/* Share variables between multiple UI scripts by adding them to your scope object. For example: 
-	x_casus_nsm_issue.sharedVar = 0; 
-
- Then access them in your scripts the same way. For example: 
-	function get_shared() {
-		return x_casus_nsm_issue.sharedVar;
-	}
-*/
-
-	return {
-
-/* set your public API here. For example:
-		incrementAndReturnPrivateVar: function() {
-			return private_function();
-		},
-*/
-		type:  "angular_controller"
+// - - - Begin Controller - - - //
+myApp.controller('Issue', ['$scope', function ($scope) {
+    
+	$scope.data = {};//Master object to hold data
+	$scope.currentDate = new Date(getCurrentDate());//Date object of current date
+	$scope.async = 0;
+	$scope.instruments = [];
+	$scope.issueTypes = [];
+	$scope.data.issue = [{//Holds data that we will send to server for insert
+		"submitter": "",
+		"issue_type": "",
+		"date": "",
+		"priority": "",
+		"subject": "",
+		"notes": "",
+		"instrument": ""
+	}];
+	//Set default to current date
+	$scope.data.supply[0].received_date = $scope.currentDate;
+	$scope.instruments = supplyReferences;//getSupplyReferences();
+	$scope.async = 1;
+	// - - - -End Init - - - -//
+	
+	//Calls script include to submit records manually
+	//////////////////////////////////////////////////////////////
+	$scope.submitAll = function () {
+		//Loop through each data, call server to submit
+		for (var i = 0; i < $scope.data.supply.length; i++) {
+			var supType = $scope.data.supply[i].supply_type;
+			var supID;
+			var date = new Date($scope.data.supply[i].received_date);
+			var supDate = date.toISOString();
+			supDate = supDate.substr(0,10);//Get the first few characters, removing extra stuff
+			var supQuantity = $scope.data.supply[i].quantity_received;
+			//Loop for supplies looking for matching supply_type - Should be better way but oh well
+			for (var j = 0; j < $scope.suppliesAll.length; j++) {
+				if (supType == $scope.suppliesAll[j].supply_type) {
+					supID = $scope.suppliesAll[j].sys_id;
+					break;
+				}
+			}//End inner for loop
+			
+			//Call to server to actually submit
+			var ajax = new GlideAjax('x_casus_printsmart.submitMultiple');
+			ajax.addParam('sysparm_name','submitSupplyReceived');
+			ajax.addParam('sysparm_supply_type', supID);
+			ajax.addParam('sysparm_quantity_received', supQuantity);
+			ajax.addParam('sysparm_received_date', supDate);
+			ajax.getXML(function ()  {
+			});
+		}//End outer for loop
+		//Redirect user
+		//var url = location.hostname;
+		//window.location = url + '/x_casus_printsmart_supplies_received_list.do';
 	};
-})();
-]]></script>
+}])// - - -END Controller- - - //
+
+
+/* Provides autopopulated dropdown menu. 
+*/
+.directive('customDropdown', function() {
+	return {
+		restrict: 'C',
+		template : 
+			'<datalist id="supplyList">' +
+			'<div ng-repeat="sup in suppliesAll track by $index">' +
+				'<option value="{{sup.supply_type}}">' + 
+			'</div>' +
+			'</datalist>'
+	};
+})//- - End Directive - - //
+
+;//- - - - -End App- - - - -//
+
+
+// - - - Handlers and Other Functions - - - //
+
+//Handles the XML call that retrieves supply sys_ids and supply_types
+//Assigns them to dat global supplyReferences 
+function handleInstruments(response) {
+	var instruments = response.responseXML.getElementsByTagName("instrument");
+	for (var i = 0; i < instruments.length; i++ ) {
+		//Temp object to push
+		var ref = {
+			"sys_id":"",
+			"name":""
+		};
+		//Fill temp obj with values from XML
+		ref.sys_id = supplies[i].getAttribute("sys_id");
+		ref.instrument_id = instruments[i].getAttribute("instrument_id");
+		instrumentReferences.push(ref);
+	}//End For
+	
+}
+/*
+Uses a global variable to store all the supplies
+*/
+function getInstrumentReferences() {
+	var ajax = new GlideAjax('x_casus_nsm_issue.retrieveRecordsInTable');
+	ajax.addParam('sysparm_name','getRecords');
+	ajax.getXML(handleInstruments);
+	ajax.getXMLWait();
+	//Now the supply references should have data (sys_id and supply_type)
+	return instrumentReferences;
+}
+
+function getCurrentDate() {
+	var date;
+	var ajax = new GlideAjax('x_casus_nsm_issue.retrieveRecordsInTable');
+	ajax.addParam('sysparm_name','nowDateTime');
+	ajax.getXML(function ()  {
+		date = ajax.getAnswer();	
+	});
+	ajax.getXMLWait();
+	//Date is weird, this replaces hyphens with slashes, which gives proper date
+	return date.replace(/-/g, '\/');
+}]]></script>
         <script_name>angular_controller</script_name>
         <sys_class_name>sys_ui_script</sys_class_name>
         <sys_created_by>gg622</sys_created_by>
         <sys_created_on>2017-05-15 22:16:45</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>e8c397306f36b200ad6cd4a21c3ee40e</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>x_casus_nsm_issue.angular_controller</sys_name>
         <sys_package display_value="NSM Issue Tracker" source="x_casus_nsm_issue">510636e76fea3200ad6cd4a21c3ee48c</sys_package>
         <sys_policy/>
@@ -51,7 +140,7 @@ x_casus_nsm_issue.angular_controller = (function() {
         <sys_scope display_value="NSM Issue Tracker">510636e76fea3200ad6cd4a21c3ee48c</sys_scope>
         <sys_update_name>sys_ui_script_e8c397306f36b200ad6cd4a21c3ee40e</sys_update_name>
         <sys_updated_by>gg622</sys_updated_by>
-        <sys_updated_on>2017-05-15 22:16:45</sys_updated_on>
-        <use_scoped_format>true</use_scoped_format>
+        <sys_updated_on>2017-05-15 23:56:07</sys_updated_on>
+        <use_scoped_format>false</use_scoped_format>
     </sys_ui_script>
 </record_update>
