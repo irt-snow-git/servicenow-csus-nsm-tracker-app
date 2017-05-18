@@ -37,7 +37,7 @@
 
 			<!-- Repeats based on amount of data -->
 				<div ng-repeat="i in data.issue track by $index">
-					<div class="col-md-12 col-sm-12">
+					<div class="col-lg-10 col-md-10 col-sm-12">
 					<div class="panel panel-default">
 						<div class="panel-heading">
 							<h3 class="panel-title">New Issue</h3>
@@ -59,20 +59,32 @@
 								</div>
 							</div>
 							
-							<div class="row">
-								<div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
-									<label for="supDate">Date received</label>
-									<input type="date" ng-model="i.received_date" class="form-control" id="supDate"/>
+							<div class="row col-lg-6">
+								<div class="form-group col-lg-9 col-lg-offset-3 col-md-4 col-sm-4 col-xs-12">
+									<label for="supDate">Date</label>
+									<input type="date" ng-model="i.date" class="form-control" id="supDate"/>
+								</div>
+								<div class="form-group col-lg-9 col-lg-offset-3 col-md-4 col-sm-4 col-xs-12">
+									<label for="priority">Priority</label>
+									<select class="form-control" id="priority_select" ng-model="i.priority">
+										<option value="3">3 - Routine (At first opportunity)</option>
+										<option value="2">2 - Urgent (needs to be addressed within 24 hours)</option>
+										<option value="1">1 - Critical (Classes impacted)</option>
+									</select>
 								</div>
 								
 							</div>
-							<div class="row">
+							<div class="row col-lg-12">
+								<hr></hr>
+							</div>
+							
+							<div class="row col-lg-12">
 								<div class="form-group col-lg-10 col-lg-offset-1">
 									<label for="short_description">Subject</label>
 									<input type="text" class="form-control" ng-model="i.subject" id="short_description"/>
 								</div>
 							</div>
-							<div class="row">
+							<div class="row col-lg-12">
 								<div class="form-group col-lg-10 col-lg-offset-1">
 									<label for="notes">Notes</label>
 									<textarea class="form-control" ng-model="i.notes" id="notes"></textarea>
@@ -83,7 +95,7 @@
 				</div>
 				</div>
 			<!-- End Repeat -->
-				<div class="row" style="padding-left:30px;">
+				<div class="row col-lg-10" style="padding-left:30px;">
 					<button class="btn-submit" ng-click="submitAll()"> Submit </button>
 				</div>
 		</div> 
@@ -101,7 +113,7 @@
         <sys_created_on>2017-05-15 22:11:25</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>28425ffc6ff2b200ad6cd4a21c3ee42f</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>20</sys_mod_count>
         <sys_name>Submit Issue</sys_name>
         <sys_package display_value="NSM Issue Tracker" source="x_casus_nsm_issue">510636e76fea3200ad6cd4a21c3ee48c</sys_package>
         <sys_policy/>
@@ -109,6 +121,6 @@
         <sys_scope display_value="NSM Issue Tracker">510636e76fea3200ad6cd4a21c3ee48c</sys_scope>
         <sys_update_name>sys_ui_page_28425ffc6ff2b200ad6cd4a21c3ee42f</sys_update_name>
         <sys_updated_by>gg622</sys_updated_by>
-        <sys_updated_on>2017-05-17 00:00:37</sys_updated_on>
+        <sys_updated_on>2017-05-18 22:11:56</sys_updated_on>
     </sys_ui_page>
 </record_update>

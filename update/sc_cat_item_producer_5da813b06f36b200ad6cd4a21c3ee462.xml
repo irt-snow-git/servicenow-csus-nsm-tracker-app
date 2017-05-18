@@ -65,6 +65,7 @@
         <type>item</type>
         <u_filter_roles/>
         <u_override_notifications>false</u_override_notifications>
+        <u_submission_count>0</u_submission_count>
         <use_sc_layout>false</use_sc_layout>
         <vendor/>
         <view/>
