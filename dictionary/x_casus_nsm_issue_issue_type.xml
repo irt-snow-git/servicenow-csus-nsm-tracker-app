@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element label="Issue Type" max_length="40" name="x_casus_nsm_issue_issue_type" type="collection"/>
+    <element label="Issue Type" max_length="40" name="x_casus_nsm_issue_issue_type" type="collection">
+        <element display="true" label="Type" max_length="40" name="type" type="string"/>
+    </element>
 </database>
