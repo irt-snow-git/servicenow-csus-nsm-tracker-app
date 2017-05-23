@@ -16,8 +16,10 @@ retrieveRecordsInTable.prototype = Object.extendsObject(global.AbstractAjaxProce
 		gr.query();
 		while (gr.next()) {
 			var d = this.newItem("issues");
-			d.setAttribute("sys_id", gr.sys_id);
-			d.setAttribute("instrument_id", gr.instrument_id);
+			d.setAttribute("instrument_sys_id", gr.instrument_id);
+			d.setAttribute("instrument_name", gr.getDisplayValue('instrument_id'));
+			d.setAttribute("issue_sys_id", gr.issue_type);
+			d.setAttribute("issue_name", gr.getDisplayValue('issue_type'));
 		}
 	},
 	
@@ -29,7 +31,7 @@ retrieveRecordsInTable.prototype = Object.extendsObject(global.AbstractAjaxProce
         <sys_created_on>2017-05-15 23:33:14</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>dee3e3f46f36b200ad6cd4a21c3ee475</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>retrieveRecordsInTable</sys_name>
         <sys_package display_value="NSM Issue Tracker" source="x_casus_nsm_issue">510636e76fea3200ad6cd4a21c3ee48c</sys_package>
         <sys_policy>read</sys_policy>
@@ -37,6 +39,6 @@ retrieveRecordsInTable.prototype = Object.extendsObject(global.AbstractAjaxProce
         <sys_scope display_value="NSM Issue Tracker">510636e76fea3200ad6cd4a21c3ee48c</sys_scope>
         <sys_update_name>sys_script_include_dee3e3f46f36b200ad6cd4a21c3ee475</sys_update_name>
         <sys_updated_by>gg622</sys_updated_by>
-        <sys_updated_on>2017-05-22 21:03:28</sys_updated_on>
+        <sys_updated_on>2017-05-23 19:38:24</sys_updated_on>
     </sys_script_include>
 </record_update>
