@@ -17,7 +17,7 @@ myApp.controller('Issue', ['$scope', function ($scope) {
 	$scope.async = 0;
 	$scope.instruments = [];
 	$scope.issueTypes = [];
-	$scope.data.issue = [{//Holds data that we will send to server for insert
+	$scope.data.issueData = [{//Holds data that we will send to server for insert
 		"submitter": "",
 		"issue_type": "",
 		"date": "",
@@ -28,8 +28,8 @@ myApp.controller('Issue', ['$scope', function ($scope) {
 	}];
 	//Set default to current date
 	//$scope.data.supply[0].received_date = $scope.currentDate;
-	$scope.instruments = instrumentReferences;
-	console.log($scope.instruments);
+	$scope.issuesList = instrumentReferences;
+	console.log($scope.issuesList);
 	//$scope.issueTypes;
 	$scope.async = 1;
 	
@@ -90,30 +90,41 @@ myApp.controller('Issue', ['$scope', function ($scope) {
 
 // - - - Handlers and Other Functions - - - //
 
-//Handles the XML call that retrieves supply sys_ids and supply_types
-//Assigns them to dat global supplyReferences 
+
 function handleInstruments(response) {
 	var data = response.responseXML.getElementsByTagName("issues");
+	var temp = {};
+	var index = 0;
 	for (var i = 0; i < data.length; i++ ) {
-		//Temp object to push
+		var issue_sys_id = data[i].getAttribute("issue_sys_id");
+		var issue_name = data[i].getAttribute("issue_name");
+		var instrument_sys_id = data[i].getAttribute("instrument_sys_id");
+		var instrument_name = data[i].getAttribute("instrument_name");
 		var ref = {
-			'issue_sys_id': '',
-			'issue_name': "",
-			'instruments': [
-
-			]
+				'issue_sys_id': '',
+				'issue_name': "",
+				'instruments': []//Multiple instruments can belong to single issue type
 		};
+		var pushCheck = false;
+		//Check if we already created the issue_type
+		if (!temp[issue_sys_id]) {
+			temp[issue_sys_id] = index;//get the index for later use
+			index++;
+			ref.issue_sys_id = issue_sys_id;
+			ref.issue_name = issue_name;
+			pushCheck = true;
+		} else {
+			// already exists, retrieve from array
+			ref = instrumentReferences[temp[issue_sys_id]];
+		}
 		var subRef = {
 			'instrument_sys_id': "",
 			'instrument_name': ""
 		};
-		//Fill temp obj with values from XML
-		ref.issue_sys_id = data[i].getAttribute("issue_sys_id");
-		ref.issue_name = data[i].getAttribute("issue_name");
-		subRef.instrument_sys_id = data[i].getAttribute("instrument_sys_id");
-		subRef.instrument_name = data[i].getAttribute("instrument_name");
+		subRef.instrument_sys_id = instrument_sys_id;
+		subRef.instrument_name = instrument_name;
 		ref.instruments.push(subRef);
-		instrumentReferences.push(ref);
+		if (pushCheck) {instrumentReferences.push(ref);}
 	}//End For
 	
 }
@@ -146,7 +157,7 @@ function getCurrentDate() {
         <sys_created_on>2017-05-15 22:16:45</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>e8c397306f36b200ad6cd4a21c3ee40e</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>30</sys_mod_count>
         <sys_name>x_casus_nsm_issue.angular_controller</sys_name>
         <sys_package display_value="NSM Issue Tracker" source="x_casus_nsm_issue">510636e76fea3200ad6cd4a21c3ee48c</sys_package>
         <sys_policy/>
@@ -154,7 +165,7 @@ function getCurrentDate() {
         <sys_scope display_value="NSM Issue Tracker">510636e76fea3200ad6cd4a21c3ee48c</sys_scope>
         <sys_update_name>sys_ui_script_e8c397306f36b200ad6cd4a21c3ee40e</sys_update_name>
         <sys_updated_by>gg622</sys_updated_by>
-        <sys_updated_on>2017-05-23 19:57:43</sys_updated_on>
+        <sys_updated_on>2017-05-23 21:53:13</sys_updated_on>
         <use_scoped_format>false</use_scoped_format>
     </sys_ui_script>
 </record_update>
