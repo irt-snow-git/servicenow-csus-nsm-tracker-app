@@ -12,12 +12,11 @@ instrumentReferences = getReferences();//AJAX call
 // - - - Begin Controller - - - //
 myApp.controller('Issue', ['$scope', function ($scope) {
     
-	$scope.data = {};//Master object to hold data
 	//$scope.currentDate = new Date(getCurrentDate());//Date object of current date
 	$scope.async = 0;
 	$scope.instruments = [];
 	$scope.issueTypes = [];
-	$scope.data.issue = [{//Holds data that we will send to server for insert
+	$scope.data = {//Holds data that we will send to server for insert
 		"submitter": "",
 		"issue_type": "",
 		"date": "",
@@ -25,7 +24,7 @@ myApp.controller('Issue', ['$scope', function ($scope) {
 		"subject": "",
 		"notes": "",
 		"instrument": ""
-	}];
+	};
 	//Set default to current date
 	//$scope.data.supply[0].received_date = $scope.currentDate;
 	$scope.issuesList = instrumentReferences;
@@ -36,6 +35,9 @@ myApp.controller('Issue', ['$scope', function ($scope) {
 	// - - - -End Init - - - -//
 	
 	//Calls script include to submit records manually
+	$scope.print = function () {
+			console.log($scope.data);
+	};
 	//////////////////////////////////////////////////////////////
 	$scope.submitAll = function () {
 		//Loop through each data, call server to submit
@@ -157,7 +159,7 @@ function getCurrentDate() {
         <sys_created_on>2017-05-15 22:16:45</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>e8c397306f36b200ad6cd4a21c3ee40e</sys_id>
-        <sys_mod_count>56</sys_mod_count>
+        <sys_mod_count>60</sys_mod_count>
         <sys_name>x_casus_nsm_issue.angular_controller</sys_name>
         <sys_package display_value="NSM Issue Tracker" source="x_casus_nsm_issue">510636e76fea3200ad6cd4a21c3ee48c</sys_package>
         <sys_policy/>
@@ -165,7 +167,7 @@ function getCurrentDate() {
         <sys_scope display_value="NSM Issue Tracker">510636e76fea3200ad6cd4a21c3ee48c</sys_scope>
         <sys_update_name>sys_ui_script_e8c397306f36b200ad6cd4a21c3ee40e</sys_update_name>
         <sys_updated_by>gg622</sys_updated_by>
-        <sys_updated_on>2017-05-24 22:10:29</sys_updated_on>
+        <sys_updated_on>2017-05-24 23:21:32</sys_updated_on>
         <use_scoped_format>false</use_scoped_format>
     </sys_ui_script>
 </record_update>
