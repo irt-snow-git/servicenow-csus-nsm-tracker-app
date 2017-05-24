@@ -10,6 +10,9 @@
             <element name="instrument_id"/>
         </index>
         <index name="index2">
+            <element name="instrument_id"/>
+        </index>
+        <index name="index3">
             <element name="room"/>
         </index>
     </element>

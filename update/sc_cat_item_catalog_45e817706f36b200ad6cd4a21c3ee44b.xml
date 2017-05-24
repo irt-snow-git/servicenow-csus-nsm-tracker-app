@@ -6,7 +6,7 @@
         <sys_class_name>sc_cat_item_catalog</sys_class_name>
         <sys_created_by>gg622</sys_created_by>
         <sys_created_on>2017-05-15 22:38:26</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>45e817706f36b200ad6cd4a21c3ee44b</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Service Catalog.Submit Issue</sys_name>

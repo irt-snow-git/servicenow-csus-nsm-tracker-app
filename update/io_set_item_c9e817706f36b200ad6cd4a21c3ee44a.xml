@@ -6,7 +6,7 @@
         <sys_class_name>io_set_item</sys_class_name>
         <sys_created_by>gg622</sys_created_by>
         <sys_created_on>2017-05-15 22:38:25</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>c9e817706f36b200ad6cd4a21c3ee44a</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>AddSubmitButtonVarSet.Submit Issue</sys_name>

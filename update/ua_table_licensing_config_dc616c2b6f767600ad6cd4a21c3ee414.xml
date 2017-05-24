@@ -9,15 +9,15 @@
         <sys_class_name>ua_table_licensing_config</sys_class_name>
         <sys_created_by>nicholasmyers</sys_created_by>
         <sys_created_on>2017-05-19 16:32:48</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
-        <sys_id>949bae4a0ff6f20012e4348ce1050e0d</sys_id>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>dc616c2b6f767600ad6cd4a21c3ee414</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>u_imp_tmpl_x_casus_nsm_issue_instrument</sys_name>
         <sys_package display_value="NSM Issue Tracker" source="x_casus_nsm_issue">510636e76fea3200ad6cd4a21c3ee48c</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="NSM Issue Tracker">510636e76fea3200ad6cd4a21c3ee48c</sys_scope>
-        <sys_update_name>ua_table_licensing_config_949bae4a0ff6f20012e4348ce1050e0d</sys_update_name>
+        <sys_update_name>ua_table_licensing_config_dc616c2b6f767600ad6cd4a21c3ee414</sys_update_name>
         <sys_updated_by>nicholasmyers</sys_updated_by>
         <sys_updated_on>2017-05-19 16:32:48</sys_updated_on>
     </ua_table_licensing_config>

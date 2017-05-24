@@ -12,7 +12,7 @@
         <sys_class_name>sys_security_acl</sys_class_name>
         <sys_created_by>gg622</sys_created_by>
         <sys_created_on>2017-05-11 23:02:21</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>e0083a2b6fea3200ad6cd4a21c3ee47e</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>x_casus_nsm_issue_instrument</sys_name>
