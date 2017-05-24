@@ -27,6 +27,24 @@ retrieveRecordsInTable.prototype = Object.extendsObject(global.AbstractAjaxProce
 		}
 	},
 	
+	submitRecord: function() {
+		
+		var gr = new GlideRecord('x_casus_nsm_issue_issue');
+		gr.initialize(); 
+		gr.submitter = this.getParameter('sysparm_submitter');  // sys_id
+		gr.instrument = this.getParameter('sysparm_instrument');// sys_id
+		gr.issue_type = this.getParameter('sysparm_issue_type');// sys_id
+		gr.priority = this.getParameter('sysparm_priority');    // string number
+		gr.subject = this.getParameter('sysparm_subject');      // string
+		gr.notes = this.getParameter('sysparm_notes');          // string
+
+		var date = new GlideDate();
+		date.setValue(this.getParameter('sysparm_date'));
+		gr.date_time = date;
+		gr.insert();
+		return true;
+	},
+	
 
     type: 'retrieveRecordsInTable'
 });]]></script>
@@ -35,7 +53,7 @@ retrieveRecordsInTable.prototype = Object.extendsObject(global.AbstractAjaxProce
         <sys_created_on>2017-05-15 23:33:14</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>dee3e3f46f36b200ad6cd4a21c3ee475</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>retrieveRecordsInTable</sys_name>
         <sys_package display_value="NSM Issue Tracker" source="x_casus_nsm_issue">510636e76fea3200ad6cd4a21c3ee48c</sys_package>
         <sys_policy>read</sys_policy>
@@ -43,6 +61,6 @@ retrieveRecordsInTable.prototype = Object.extendsObject(global.AbstractAjaxProce
         <sys_scope display_value="NSM Issue Tracker">510636e76fea3200ad6cd4a21c3ee48c</sys_scope>
         <sys_update_name>sys_script_include_dee3e3f46f36b200ad6cd4a21c3ee475</sys_update_name>
         <sys_updated_by>gg622</sys_updated_by>
-        <sys_updated_on>2017-05-24 23:38:50</sys_updated_on>
+        <sys_updated_on>2017-05-24 23:47:42</sys_updated_on>
     </sys_script_include>
 </record_update>

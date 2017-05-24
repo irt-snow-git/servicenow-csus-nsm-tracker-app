@@ -36,18 +36,23 @@ myApp.controller('Issue', ['$scope', function ($scope) {
 	// - - - -End Init - - - -//
 	
 	//Calls script include to submit records manually
-	$scope.print = function () {
-			console.log($scope.data);
-	};
 	//////////////////////////////////////////////////////////////
 	$scope.submitRecordAjax = function () {
+		var date = new Date($scope.data.date);
+		var stringDate = date.toISOString();
+			stringDate = stringDate.substr(0,10);//Get the first few characters, removing extra stuff
+		console.log($scope.data);
 
 		//Call to server to actually submit
-		var ajax = new GlideAjax('x_casus_printsmart.submitMultiple');
-		ajax.addParam('sysparm_name','submitSupplyReceived');
-		ajax.addParam('sysparm_supply_type', supID);
-		ajax.addParam('sysparm_quantity_received', supQuantity);
-		ajax.addParam('sysparm_received_date', supDate);
+		var ajax = new GlideAjax('x_casus_nsm_issue.retrieveRecordsInTable');
+		ajax.addParam('sysparm_name','submitRecord');
+		ajax.addParam('sysparm_submitter', $scope.data.submitter_id);
+		ajax.addParam('sysparm_instrument', $scope.data.instrument);
+		ajax.addParam('sysparm_issue_type', $scope.data.issue_type);
+		ajax.addParam('sysparm_priority', $scope.data.priority);
+		ajax.addParam('sysparm_subject', $scope.data.subject);
+		ajax.addParam('sysparm_notes', $scope.data.notes);
+		ajax.addParam('sysparm_received_date', stringDate);
 		ajax.getXML(function ()  {
 		});
 		
@@ -145,7 +150,7 @@ function getCurrentDate() {
         <sys_created_on>2017-05-15 22:16:45</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>e8c397306f36b200ad6cd4a21c3ee40e</sys_id>
-        <sys_mod_count>67</sys_mod_count>
+        <sys_mod_count>70</sys_mod_count>
         <sys_name>x_casus_nsm_issue.angular_controller</sys_name>
         <sys_package display_value="NSM Issue Tracker" source="x_casus_nsm_issue">510636e76fea3200ad6cd4a21c3ee48c</sys_package>
         <sys_policy/>
@@ -153,7 +158,7 @@ function getCurrentDate() {
         <sys_scope display_value="NSM Issue Tracker">510636e76fea3200ad6cd4a21c3ee48c</sys_scope>
         <sys_update_name>sys_ui_script_e8c397306f36b200ad6cd4a21c3ee40e</sys_update_name>
         <sys_updated_by>gg622</sys_updated_by>
-        <sys_updated_on>2017-05-24 23:40:00</sys_updated_on>
+        <sys_updated_on>2017-05-24 23:57:09</sys_updated_on>
         <use_scoped_format>false</use_scoped_format>
     </sys_ui_script>
 </record_update>
