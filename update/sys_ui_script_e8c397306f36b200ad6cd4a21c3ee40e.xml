@@ -14,22 +14,23 @@ myApp.controller('Issue', ['$scope', function ($scope) {
     
 	//$scope.currentDate = new Date(getCurrentDate());//Date object of current date
 	$scope.async = 0;
-	$scope.instruments = [];
-	$scope.issueTypes = [];
 	$scope.data = {//Holds data that we will send to server for insert
 		"submitter": "",
+		"submitter_id": "",
 		"issue_type": "",
 		"date": "",
-		"priority": "",
+		"priority": "3",
 		"subject": "",
 		"notes": "",
 		"instrument": ""
 	};
 	//Set default to current date
-	//$scope.data.supply[0].received_date = $scope.currentDate;
+	$scope.data.date = new Date(getCurrentDate());
 	$scope.issuesList = instrumentReferences;
-
 	console.log($scope.issuesList);
+	$scope.data.submitter = g_user.getFullName();// Default to signed in user
+	$scope.data.submitter_id = g_user.userID;// Need the sys_id for submission later
+	//$scope.data.priority = 1;
 	$scope.async = 1;
 	
 	// - - - -End Init - - - -//
@@ -39,32 +40,17 @@ myApp.controller('Issue', ['$scope', function ($scope) {
 			console.log($scope.data);
 	};
 	//////////////////////////////////////////////////////////////
-	$scope.submitAll = function () {
-		//Loop through each data, call server to submit
-		for (var i = 0; i < $scope.data.supply.length; i++) {
-			var supType = $scope.data.supply[i].supply_type;
-			var supID;
-			var date = new Date($scope.data.supply[i].received_date);
-			var supDate = date.toISOString();
-			supDate = supDate.substr(0,10);//Get the first few characters, removing extra stuff
-			var supQuantity = $scope.data.supply[i].quantity_received;
-			//Loop for supplies looking for matching supply_type - Should be better way but oh well
-			for (var j = 0; j < $scope.suppliesAll.length; j++) {
-				if (supType == $scope.suppliesAll[j].supply_type) {
-					supID = $scope.suppliesAll[j].sys_id;
-					break;
-				}
-			}//End inner for loop
-			
-			//Call to server to actually submit
-			var ajax = new GlideAjax('x_casus_printsmart.submitMultiple');
-			ajax.addParam('sysparm_name','submitSupplyReceived');
-			ajax.addParam('sysparm_supply_type', supID);
-			ajax.addParam('sysparm_quantity_received', supQuantity);
-			ajax.addParam('sysparm_received_date', supDate);
-			ajax.getXML(function ()  {
-			});
-		}//End outer for loop
+	$scope.submitRecordAjax = function () {
+
+		//Call to server to actually submit
+		var ajax = new GlideAjax('x_casus_printsmart.submitMultiple');
+		ajax.addParam('sysparm_name','submitSupplyReceived');
+		ajax.addParam('sysparm_supply_type', supID);
+		ajax.addParam('sysparm_quantity_received', supQuantity);
+		ajax.addParam('sysparm_received_date', supDate);
+		ajax.getXML(function ()  {
+		});
+		
 		//Redirect user
 		//var url = location.hostname;
 		//window.location = url + '/x_casus_printsmart_supplies_received_list.do';
@@ -159,7 +145,7 @@ function getCurrentDate() {
         <sys_created_on>2017-05-15 22:16:45</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>e8c397306f36b200ad6cd4a21c3ee40e</sys_id>
-        <sys_mod_count>60</sys_mod_count>
+        <sys_mod_count>67</sys_mod_count>
         <sys_name>x_casus_nsm_issue.angular_controller</sys_name>
         <sys_package display_value="NSM Issue Tracker" source="x_casus_nsm_issue">510636e76fea3200ad6cd4a21c3ee48c</sys_package>
         <sys_policy/>
@@ -167,7 +153,7 @@ function getCurrentDate() {
         <sys_scope display_value="NSM Issue Tracker">510636e76fea3200ad6cd4a21c3ee48c</sys_scope>
         <sys_update_name>sys_ui_script_e8c397306f36b200ad6cd4a21c3ee40e</sys_update_name>
         <sys_updated_by>gg622</sys_updated_by>
-        <sys_updated_on>2017-05-24 23:21:32</sys_updated_on>
+        <sys_updated_on>2017-05-24 23:40:00</sys_updated_on>
         <use_scoped_format>false</use_scoped_format>
     </sys_ui_script>
 </record_update>
