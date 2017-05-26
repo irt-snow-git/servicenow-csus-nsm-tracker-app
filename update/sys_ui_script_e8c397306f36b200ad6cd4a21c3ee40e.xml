@@ -8,10 +8,14 @@
         <script><![CDATA[var myApp = angular.module('myApp', []);
 var instrumentReferences = [];//Global variable to hold array of instruments
 instrumentReferences = getReferences();//AJAX call
+var tempDate = new Date(getCurrentDate());//AJAX to get current date. Use string below to format it
+var tempDateString = tempDate.getMonth() + 1;  // returns 0 - 11, so add 1
+tempDateString += "/" + tempDate.getDate();    // returns day
+tempDateString += "/" + tempDate.getFullYear();// returns year
+
 
 // - - - Begin Controller - - - //
 myApp.controller('Issue', ['$scope', function ($scope) {
-    
 	//$scope.currentDate = new Date(getCurrentDate());//Date object of current date
 	$scope.async = 0;
 	$scope.data = {//Holds data that we will send to server for insert
@@ -19,18 +23,19 @@ myApp.controller('Issue', ['$scope', function ($scope) {
 		"submitter_id": "",
 		"issue_type": "",
 		"date": "",
+		"time":"",
 		"priority": "3",
 		"subject": "",
 		"notes": "",
 		"instrument": ""
 	};
 	//Set default to current date
-	$scope.data.date = new Date(getCurrentDate());
+	
+	$scope.data.date = tempDateString;
 	$scope.issuesList = instrumentReferences;
 	console.log($scope.issuesList);
 	$scope.data.submitter = g_user.getFullName();// Default to signed in user
 	$scope.data.submitter_id = g_user.userID;// Need the sys_id for submission later
-	//$scope.data.priority = 1;
 	$scope.async = 1;
 	
 	// - - - -End Init - - - -//
@@ -40,7 +45,15 @@ myApp.controller('Issue', ['$scope', function ($scope) {
 	$scope.submitRecordAjax = function () {
 		var date = new Date($scope.data.date);
 		var stringDate = date.toISOString();
-			stringDate = stringDate.substr(0,10);//Get the first few characters, removing extra stuff
+		stringDate = stringDate.substr(0,10);//Get the first few characters, removing extra stuff
+		// Time stuff
+		var timepicker = $('.timepicker').wickedpicker();
+		var tempTime = timepicker.wickedpicker('time');
+		tempTime = tempTime.replace(/\s+/g, '');
+		tempTime = tempTime.slice(0,5) + " " + tempTime.slice(5);
+		alert(tempTime);
+		var time24 = ConvertTimeFormat(tempTime);
+		$scope.data.time = time24 + ":00"; 
 		console.log($scope.data);
 
 		//Call to server to actually submit
@@ -82,7 +95,6 @@ myApp.controller('Issue', ['$scope', function ($scope) {
 
 
 // - - - Handlers and Other Functions - - - //
-
 
 function handleInstruments(response) {
 	var data = response.responseXML.getElementsByTagName("issues");
@@ -143,6 +155,20 @@ function getCurrentDate() {
 	ajax.getXMLWait();
 	//Date is weird, this replaces hyphens with slashes, which gives proper date
 	return date.replace(/-/g, '\/');
+}
+
+function ConvertTimeFormat(str) {
+    var time = str;
+    var hours = Number(time.match(/^(\d+)/)[1]);
+    var minutes = Number(time.match(/:(\d+)/)[1]);
+    var AMPM = time.match(/\s(.*)$/)[1];
+    if (AMPM == "PM" && hours < 12) hours = hours + 12;
+    if (AMPM == "AM" && hours == 12) hours = hours - 12;
+    var sHours = hours.toString();
+    var sMinutes = minutes.toString();
+    if (hours < 10) sHours = "0" + sHours;
+    if (minutes < 10) sMinutes = "0" + sMinutes;
+    return (sHours + ":" + sMinutes);
 }]]></script>
         <script_name>angular_controller</script_name>
         <sys_class_name>sys_ui_script</sys_class_name>
@@ -150,7 +176,7 @@ function getCurrentDate() {
         <sys_created_on>2017-05-15 22:16:45</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>e8c397306f36b200ad6cd4a21c3ee40e</sys_id>
-        <sys_mod_count>70</sys_mod_count>
+        <sys_mod_count>102</sys_mod_count>
         <sys_name>x_casus_nsm_issue.angular_controller</sys_name>
         <sys_package display_value="NSM Issue Tracker" source="x_casus_nsm_issue">510636e76fea3200ad6cd4a21c3ee48c</sys_package>
         <sys_policy/>
@@ -158,7 +184,7 @@ function getCurrentDate() {
         <sys_scope display_value="NSM Issue Tracker">510636e76fea3200ad6cd4a21c3ee48c</sys_scope>
         <sys_update_name>sys_ui_script_e8c397306f36b200ad6cd4a21c3ee40e</sys_update_name>
         <sys_updated_by>gg622</sys_updated_by>
-        <sys_updated_on>2017-05-24 23:57:09</sys_updated_on>
+        <sys_updated_on>2017-05-26 22:58:58</sys_updated_on>
         <use_scoped_format>false</use_scoped_format>
     </sys_ui_script>
 </record_update>

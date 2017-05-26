@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sys_ui_page">
-    <sys_ui_page action="INSERT_OR_UPDATE">
-        <category>general</category>
-        <client_script><![CDATA[!function($, window, document) {
+<record_update table="sys_ui_script">
+    <sys_ui_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description/>
+        <global>false</global>
+        <name>x_casus_nsm_issue.timepicker_jquery</name>
+        <script><![CDATA[!function($, window, document) {
     "use strict";
     function Wickedpicker(e, t) {
         this.element = $(e),
@@ -286,157 +289,22 @@
         })
     }
 }(jQuery, window, document);
-]]></client_script>
-        <description>Page for end-users to submit new issues. </description>
-        <direct>false</direct>
-        <endpoint>x_casus_nsm_issue_Submit Issue.do</endpoint>
-        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
-<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
-<script language="javascript" src="https://code.angularjs.org/1.4.0-beta.4/angular.js" />
-<link href="775d7a586f437200ad6cd4a21c3ee47d.cssdbx?" rel="stylesheet" type="text/css"/>
-<script src="x_casus_nsm_issue.angular_controller.jsdbx"></script>
-<script type="text/javascript" src="x_casus_nsm_issue.timepicker_jquery.jsdbx"></script>
-
-<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-	
-<script>
-$( function() {
-    $( "#datepicker" ).datepicker();
- } );
-$( function() {
-$('.timepicker').wickedpicker();
-} );
-
-
-</script>
-<style>
-.btn-close {
-	font-size:18px;
-	color: lightgray;
-	font-weight: lighter;
-	background: transparent;
-}
-	
-.btn-submit {
-	float:right;
-	margin-right: 30px !important;
-	color: #fff !important;
-    background-color: #4da845 !important;
-    border-color: #418c3a !important;
-}
-
-</style>
-	
-<div ng-app="myApp">
-<!-- References-->
-<div class="container full-height" id="issue-div" style="padding:50px;">
-	<div>
-		<div ng-controller="Issue" id="issue2-div">
-
-			<h1>Submit an Issue</h1>
-			<p>Text goes here lol</p>
-
-					<div class="col-lg-10 col-md-10 col-sm-12">
-					<div class="panel panel-default">
-						<div class="panel-heading">
-							<h3 class="panel-title">New Issue</h3>
-						</div>
-						<div class="panel-body">
-							<div class="row col-lg-6">
-								<div class="form-group col-lg-9 col-lg-offset-1 col-md-4 col-sm-4 col-xs-12">
-									<label for="submitter_input">Submitter</label>
-									<input type="text" ng-model="data.submitter" class="form-control" id="submitter_input"/>
-								</div>
-								<div class="form-group col-lg-9 col-lg-offset-1 col-md-4 col-sm-4 col-xs-12">
-									<label for="issue_input">Issue Type</label>
-									<select class="form-control" id="issue_input" ng-model="data.issue_type"
-											ng-options="w.issue_sys_id as w.issue_name for w in issuesList track by w.issue_sys_id" >
-										<option value=""></option>
-									</select>
-								</div>
-								<div class="form-group col-lg-9 col-lg-offset-1 col-md-4 col-sm-4 col-xs-12">
-									<label for="instrument_input">Instrument</label>
-									<select id="instrument_input" ng-model="data.instrument" class="form-control" 
-											ng-disabled="!data.issue_type" 
-											ng-options="j.instrument_sys_id as j.instrument_name for j in ((issuesList | filter:{'issue_sys_id': data.issue_type})[0].instruments)
-														track by j.instrument_sys_id">
-										<option value="">Select Issue Type</option>
-									</select>
-								</div>
-							</div>
-							
-							<div class="row col-lg-6">
-								<div class="form-group col-lg-9 col-lg-offset-3 col-md-4 col-sm-4 col-xs-12">
-									<label for="datepicker">Date</label>
-									<input type="text" id="datepicker" class="form-control" ng-model="data.date" />
-								</div>
-								<div class="form-group col-lg-9 col-lg-offset-3 col-md-4 col-sm-4 col-xs-12">
-									<label for="timepicker">Time</label>
-									<input type="text" ng-model="data.time" 
-										   id="timepicker" name="timepicker" class="timepicker form-control"/>
-								</div>
-								<div class="form-group col-lg-9 col-lg-offset-3 col-md-4 col-sm-4 col-xs-12">
-									<label for="priority_input">Priority</label>
-									<select class="form-control" id="priority_input" ng-model="data.priority">
-										<option value="3">3 - Routine (At first opportunity)</option>
-										<option value="2">2 - Urgent (needs to be addressed within 24 hours)</option>
-										<option value="1">1 - Critical (Classes impacted)</option>
-									</select>
-								</div>
-					
-							</div>
-							<div class="row col-lg-12">
-								<hr></hr>
-							</div>
-							
-							<div class="row col-lg-12">
-								<div class="form-group col-lg-10 col-lg-offset-1">
-									<label for="subject_input">Subject</label>
-									<input type="text" class="form-control" ng-model="data.subject" id="subject_input"/>
-								</div>
-							</div>
-							<div class="row col-lg-12">
-								<div class="form-group col-lg-10 col-lg-offset-1">
-									<label for="notes_input">Notes</label>
-									<textarea class="form-control" ng-model="data.notes" id="notes_input"></textarea>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			<!-- End Repeat -->
-				<div class="row col-lg-10" style="padding-left:30px;" ng-if="async == 1">
-					<button class="btn-submit" ng-click="submitRecordAjax()"> Submit </button>
-				</div>
-			
-			
-			
-
-
-		</div> 
-		<!-- END Supplies Received Controller-->
-				
-	</div>
-	</div>
-</div>
-
-</j:jelly>]]></html>
-        <name>Submit Issue</name>
-        <processing_script/>
-        <sys_class_name>sys_ui_page</sys_class_name>
+]]></script>
+        <script_name>timepicker_jquery</script_name>
+        <sys_class_name>sys_ui_script</sys_class_name>
         <sys_created_by>gg622</sys_created_by>
-        <sys_created_on>2017-05-15 22:11:25</sys_created_on>
+        <sys_created_on>2017-05-26 19:10:18</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
-        <sys_id>28425ffc6ff2b200ad6cd4a21c3ee42f</sys_id>
-        <sys_mod_count>91</sys_mod_count>
-        <sys_name>Submit Issue</sys_name>
+        <sys_id>21821b146f837200ad6cd4a21c3ee486</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>x_casus_nsm_issue.timepicker_jquery</sys_name>
         <sys_package display_value="NSM Issue Tracker" source="x_casus_nsm_issue">510636e76fea3200ad6cd4a21c3ee48c</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="NSM Issue Tracker">510636e76fea3200ad6cd4a21c3ee48c</sys_scope>
-        <sys_update_name>sys_ui_page_28425ffc6ff2b200ad6cd4a21c3ee42f</sys_update_name>
+        <sys_update_name>sys_ui_script_21821b146f837200ad6cd4a21c3ee486</sys_update_name>
         <sys_updated_by>gg622</sys_updated_by>
-        <sys_updated_on>2017-05-26 21:09:55</sys_updated_on>
-    </sys_ui_page>
+        <sys_updated_on>2017-05-26 19:28:40</sys_updated_on>
+        <use_scoped_format>false</use_scoped_format>
+    </sys_ui_script>
 </record_update>
