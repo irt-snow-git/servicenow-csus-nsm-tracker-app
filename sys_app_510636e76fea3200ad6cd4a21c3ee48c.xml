@@ -27,7 +27,7 @@
         <sys_updated_on>2017-05-11 22:53:41</sys_updated_on>
         <template/>
         <trackable>true</trackable>
-        <user_role display_value="x_casus_nsm_issue.user" name="x_casus_nsm_issue.user">25063a2b6fea3200ad6cd4a21c3ee45b</user_role>
+        <user_role display_value="x_casus_nsm_issue.chem_user" name="x_casus_nsm_issue.chem_user">25063a2b6fea3200ad6cd4a21c3ee45b</user_role>
         <vendor/>
         <vendor_prefix/>
         <version>1.0.0</version>

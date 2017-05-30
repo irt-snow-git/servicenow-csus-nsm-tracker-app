@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="x_casus_nsm_issue_issue" version="2" view="rpt-tempx_casus_nsm_issue_issuegg622">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>number</element>
+            <list_id display_value="x_casus_nsm_issue_issue" element="NULL" name="x_casus_nsm_issue_issue" parent="NULL" relationship="NULL" sys_domain="global" view="7b97c43d0f8bb20012e4348ce1050e49">00a7c43d0f8bb20012e4348ce1050e4a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2017-05-30 20:13:45</sys_created_on>
+            <sys_id>44a7c43d0f8bb20012e4348ce1050e4a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2017-05-30 20:13:45</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>cost</element>
+            <list_id display_value="x_casus_nsm_issue_issue" element="NULL" name="x_casus_nsm_issue_issue" parent="NULL" relationship="NULL" sys_domain="global" view="7b97c43d0f8bb20012e4348ce1050e49">00a7c43d0f8bb20012e4348ce1050e4a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2017-05-30 20:13:45</sys_created_on>
+            <sys_id>c4a7c43d0f8bb20012e4348ce1050e4a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2017-05-30 20:13:45</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>date_time</element>
+            <list_id display_value="x_casus_nsm_issue_issue" element="NULL" name="x_casus_nsm_issue_issue" parent="NULL" relationship="NULL" sys_domain="global" view="7b97c43d0f8bb20012e4348ce1050e49">00a7c43d0f8bb20012e4348ce1050e4a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2017-05-30 20:13:45</sys_created_on>
+            <sys_id>48a7c43d0f8bb20012e4348ce1050e4a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2017-05-30 20:13:45</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>labor_hours</element>
+            <list_id display_value="x_casus_nsm_issue_issue" element="NULL" name="x_casus_nsm_issue_issue" parent="NULL" relationship="NULL" sys_domain="global" view="7b97c43d0f8bb20012e4348ce1050e49">00a7c43d0f8bb20012e4348ce1050e4a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2017-05-30 20:13:45</sys_created_on>
+            <sys_id>c8a7c43d0f8bb20012e4348ce1050e4a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2017-05-30 20:13:45</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>notes</element>
+            <list_id display_value="x_casus_nsm_issue_issue" element="NULL" name="x_casus_nsm_issue_issue" parent="NULL" relationship="NULL" sys_domain="global" view="7b97c43d0f8bb20012e4348ce1050e49">00a7c43d0f8bb20012e4348ce1050e4a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2017-05-30 20:13:45</sys_created_on>
+            <sys_id>4ca7c43d0f8bb20012e4348ce1050e4a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2017-05-30 20:13:45</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>priority</element>
+            <list_id display_value="x_casus_nsm_issue_issue" element="NULL" name="x_casus_nsm_issue_issue" parent="NULL" relationship="NULL" sys_domain="global" view="7b97c43d0f8bb20012e4348ce1050e49">00a7c43d0f8bb20012e4348ce1050e4a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2017-05-30 20:13:45</sys_created_on>
+            <sys_id>cca7c43d0f8bb20012e4348ce1050e4a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2017-05-30 20:13:45</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>resolution</element>
+            <list_id display_value="x_casus_nsm_issue_issue" element="NULL" name="x_casus_nsm_issue_issue" parent="NULL" relationship="NULL" sys_domain="global" view="7b97c43d0f8bb20012e4348ce1050e49">00a7c43d0f8bb20012e4348ce1050e4a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2017-05-30 20:13:45</sys_created_on>
+            <sys_id>40a7c43d0f8bb20012e4348ce1050e4b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2017-05-30 20:13:45</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>state</element>
+            <list_id display_value="x_casus_nsm_issue_issue" element="NULL" name="x_casus_nsm_issue_issue" parent="NULL" relationship="NULL" sys_domain="global" view="7b97c43d0f8bb20012e4348ce1050e49">00a7c43d0f8bb20012e4348ce1050e4a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>7</position>
+            <sum>false</sum>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2017-05-30 20:13:45</sys_created_on>
+            <sys_id>c0a7c43d0f8bb20012e4348ce1050e4b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2017-05-30 20:13:45</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>subject</element>
+            <list_id display_value="x_casus_nsm_issue_issue" element="NULL" name="x_casus_nsm_issue_issue" parent="NULL" relationship="NULL" sys_domain="global" view="7b97c43d0f8bb20012e4348ce1050e49">00a7c43d0f8bb20012e4348ce1050e4a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>8</position>
+            <sum>false</sum>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2017-05-30 20:13:45</sys_created_on>
+            <sys_id>44a7c43d0f8bb20012e4348ce1050e4b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2017-05-30 20:13:45</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>submitter</element>
+            <list_id display_value="x_casus_nsm_issue_issue" element="NULL" name="x_casus_nsm_issue_issue" parent="NULL" relationship="NULL" sys_domain="global" view="7b97c43d0f8bb20012e4348ce1050e49">00a7c43d0f8bb20012e4348ce1050e4a</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>9</position>
+            <sum>false</sum>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2017-05-30 20:13:45</sys_created_on>
+            <sys_id>c4a7c43d0f8bb20012e4348ce1050e4b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2017-05-30 20:13:45</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_casus_nsm_issue_issue</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>gg622</sys_created_by>
+            <sys_created_on>2017-05-30 20:13:45</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_id>00a7c43d0f8bb20012e4348ce1050e4a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name/>
+            <sys_package/>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="NSM Issue Tracker">510636e76fea3200ad6cd4a21c3ee48c</sys_scope>
+            <sys_update_name/>
+            <sys_updated_by>gg622</sys_updated_by>
+            <sys_updated_on>2017-05-30 20:13:45</sys_updated_on>
+            <sys_user/>
+            <view display_value="Rpt-tempx_casus_nsm_issue_issuegg622" name="rpt-tempx_casus_nsm_issue_issuegg622">7b97c43d0f8bb20012e4348ce1050e49</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

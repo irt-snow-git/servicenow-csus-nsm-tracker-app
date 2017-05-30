@@ -4,152 +4,107 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>number</element>
-            <list_id display_value="x_casus_nsm_issue_issue" element="NULL" name="x_casus_nsm_issue_issue" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c61c53ff6f227200ad6cd4a21c3ee46e</list_id>
+            <list_id display_value="x_casus_nsm_issue_issue" element="NULL" name="x_casus_nsm_issue_issue" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">446324316f0fb200ad6cd4a21c3ee419</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
             <sum>false</sum>
             <sys_created_by>gg622</sys_created_by>
-            <sys_created_on>2017-05-12 20:18:30</sys_created_on>
-            <sys_id>ce1c17ff6f227200ad6cd4a21c3ee471</sys_id>
+            <sys_created_on>2017-05-30 22:14:59</sys_created_on>
+            <sys_id>886324316f0fb200ad6cd4a21c3ee419</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>gg622</sys_updated_by>
-            <sys_updated_on>2017-05-12 20:18:30</sys_updated_on>
+            <sys_updated_on>2017-05-30 22:14:59</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>cost</element>
-            <list_id display_value="x_casus_nsm_issue_issue" element="NULL" name="x_casus_nsm_issue_issue" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c61c53ff6f227200ad6cd4a21c3ee46e</list_id>
+            <element>state</element>
+            <list_id display_value="x_casus_nsm_issue_issue" element="NULL" name="x_casus_nsm_issue_issue" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">446324316f0fb200ad6cd4a21c3ee419</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>1</position>
             <sum>false</sum>
             <sys_created_by>gg622</sys_created_by>
-            <sys_created_on>2017-05-12 20:18:30</sys_created_on>
-            <sys_id>421c17ff6f227200ad6cd4a21c3ee472</sys_id>
+            <sys_created_on>2017-05-30 22:15:00</sys_created_on>
+            <sys_id>1c6324316f0fb200ad6cd4a21c3ee419</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>gg622</sys_updated_by>
-            <sys_updated_on>2017-05-12 20:18:30</sys_updated_on>
+            <sys_updated_on>2017-05-30 22:15:00</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>date_time</element>
-            <list_id display_value="x_casus_nsm_issue_issue" element="NULL" name="x_casus_nsm_issue_issue" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c61c53ff6f227200ad6cd4a21c3ee46e</list_id>
+            <element>priority</element>
+            <list_id display_value="x_casus_nsm_issue_issue" element="NULL" name="x_casus_nsm_issue_issue" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">446324316f0fb200ad6cd4a21c3ee419</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>2</position>
             <sum>false</sum>
             <sys_created_by>gg622</sys_created_by>
-            <sys_created_on>2017-05-12 20:18:30</sys_created_on>
-            <sys_id>c21c17ff6f227200ad6cd4a21c3ee472</sys_id>
+            <sys_created_on>2017-05-30 22:15:00</sys_created_on>
+            <sys_id>9c6324316f0fb200ad6cd4a21c3ee419</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>gg622</sys_updated_by>
-            <sys_updated_on>2017-05-12 20:18:30</sys_updated_on>
+            <sys_updated_on>2017-05-30 22:15:00</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>labor_hours</element>
-            <list_id display_value="x_casus_nsm_issue_issue" element="NULL" name="x_casus_nsm_issue_issue" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c61c53ff6f227200ad6cd4a21c3ee46e</list_id>
+            <element>subject</element>
+            <list_id display_value="x_casus_nsm_issue_issue" element="NULL" name="x_casus_nsm_issue_issue" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">446324316f0fb200ad6cd4a21c3ee419</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>3</position>
             <sum>false</sum>
             <sys_created_by>gg622</sys_created_by>
-            <sys_created_on>2017-05-12 20:18:30</sys_created_on>
-            <sys_id>461c17ff6f227200ad6cd4a21c3ee472</sys_id>
+            <sys_created_on>2017-05-30 22:15:00</sys_created_on>
+            <sys_id>106324316f0fb200ad6cd4a21c3ee41a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>gg622</sys_updated_by>
-            <sys_updated_on>2017-05-12 20:18:30</sys_updated_on>
+            <sys_updated_on>2017-05-30 22:15:00</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>notes</element>
-            <list_id display_value="x_casus_nsm_issue_issue" element="NULL" name="x_casus_nsm_issue_issue" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c61c53ff6f227200ad6cd4a21c3ee46e</list_id>
+            <element>instrument</element>
+            <list_id display_value="x_casus_nsm_issue_issue" element="NULL" name="x_casus_nsm_issue_issue" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">446324316f0fb200ad6cd4a21c3ee419</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>4</position>
             <sum>false</sum>
             <sys_created_by>gg622</sys_created_by>
-            <sys_created_on>2017-05-12 20:18:30</sys_created_on>
-            <sys_id>c61c17ff6f227200ad6cd4a21c3ee472</sys_id>
+            <sys_created_on>2017-05-30 22:15:00</sys_created_on>
+            <sys_id>906324316f0fb200ad6cd4a21c3ee41a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>gg622</sys_updated_by>
-            <sys_updated_on>2017-05-12 20:18:30</sys_updated_on>
+            <sys_updated_on>2017-05-30 22:15:00</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>priority</element>
-            <list_id display_value="x_casus_nsm_issue_issue" element="NULL" name="x_casus_nsm_issue_issue" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c61c53ff6f227200ad6cd4a21c3ee46e</list_id>
+            <element>date_time</element>
+            <list_id display_value="x_casus_nsm_issue_issue" element="NULL" name="x_casus_nsm_issue_issue" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">446324316f0fb200ad6cd4a21c3ee419</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>5</position>
             <sum>false</sum>
             <sys_created_by>gg622</sys_created_by>
-            <sys_created_on>2017-05-12 20:18:30</sys_created_on>
-            <sys_id>4a1c17ff6f227200ad6cd4a21c3ee472</sys_id>
+            <sys_created_on>2017-05-30 22:15:00</sys_created_on>
+            <sys_id>146324316f0fb200ad6cd4a21c3ee41a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>gg622</sys_updated_by>
-            <sys_updated_on>2017-05-12 20:18:30</sys_updated_on>
+            <sys_updated_on>2017-05-30 22:15:00</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>resolution</element>
-            <list_id display_value="x_casus_nsm_issue_issue" element="NULL" name="x_casus_nsm_issue_issue" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c61c53ff6f227200ad6cd4a21c3ee46e</list_id>
+            <element>submitter</element>
+            <list_id display_value="x_casus_nsm_issue_issue" element="NULL" name="x_casus_nsm_issue_issue" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">446324316f0fb200ad6cd4a21c3ee419</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>6</position>
             <sum>false</sum>
             <sys_created_by>gg622</sys_created_by>
-            <sys_created_on>2017-05-12 20:18:30</sys_created_on>
-            <sys_id>ca1c17ff6f227200ad6cd4a21c3ee472</sys_id>
+            <sys_created_on>2017-05-30 22:15:00</sys_created_on>
+            <sys_id>946324316f0fb200ad6cd4a21c3ee41a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>gg622</sys_updated_by>
-            <sys_updated_on>2017-05-12 20:18:30</sys_updated_on>
-        </sys_ui_list_element>
-        <sys_ui_list_element action="INSERT_OR_UPDATE">
-            <average_value>false</average_value>
-            <element>state</element>
-            <list_id display_value="x_casus_nsm_issue_issue" element="NULL" name="x_casus_nsm_issue_issue" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c61c53ff6f227200ad6cd4a21c3ee46e</list_id>
-            <max_value>false</max_value>
-            <min_value>false</min_value>
-            <position>7</position>
-            <sum>false</sum>
-            <sys_created_by>gg622</sys_created_by>
-            <sys_created_on>2017-05-12 20:18:30</sys_created_on>
-            <sys_id>4e1c17ff6f227200ad6cd4a21c3ee472</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>gg622</sys_updated_by>
-            <sys_updated_on>2017-05-12 20:18:30</sys_updated_on>
-        </sys_ui_list_element>
-        <sys_ui_list_element action="INSERT_OR_UPDATE">
-            <average_value>false</average_value>
-            <element>subject</element>
-            <list_id display_value="x_casus_nsm_issue_issue" element="NULL" name="x_casus_nsm_issue_issue" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c61c53ff6f227200ad6cd4a21c3ee46e</list_id>
-            <max_value>false</max_value>
-            <min_value>false</min_value>
-            <position>8</position>
-            <sum>false</sum>
-            <sys_created_by>gg622</sys_created_by>
-            <sys_created_on>2017-05-12 20:18:30</sys_created_on>
-            <sys_id>ce1c17ff6f227200ad6cd4a21c3ee472</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>gg622</sys_updated_by>
-            <sys_updated_on>2017-05-12 20:18:30</sys_updated_on>
-        </sys_ui_list_element>
-        <sys_ui_list_element action="INSERT_OR_UPDATE">
-            <average_value>false</average_value>
-            <element>submitter</element>
-            <list_id display_value="x_casus_nsm_issue_issue" element="NULL" name="x_casus_nsm_issue_issue" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">c61c53ff6f227200ad6cd4a21c3ee46e</list_id>
-            <max_value>false</max_value>
-            <min_value>false</min_value>
-            <position>9</position>
-            <sum>false</sum>
-            <sys_created_by>gg622</sys_created_by>
-            <sys_created_on>2017-05-12 20:18:30</sys_created_on>
-            <sys_id>421c17ff6f227200ad6cd4a21c3ee473</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>gg622</sys_updated_by>
-            <sys_updated_on>2017-05-12 20:18:30</sys_updated_on>
+            <sys_updated_on>2017-05-30 22:15:00</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
@@ -163,10 +118,10 @@
             <sum>false</sum>
             <sys_class_name>sys_ui_list</sys_class_name>
             <sys_created_by>gg622</sys_created_by>
-            <sys_created_on>2017-05-12 20:18:30</sys_created_on>
-            <sys_customer_update>false</sys_customer_update>
+            <sys_created_on>2017-05-30 22:14:59</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
             <sys_domain>global</sys_domain>
-            <sys_id>c61c53ff6f227200ad6cd4a21c3ee46e</sys_id>
+            <sys_id>446324316f0fb200ad6cd4a21c3ee419</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>x_casus_nsm_issue_issue</sys_name>
             <sys_package display_value="NSM Issue Tracker" source="x_casus_nsm_issue">510636e76fea3200ad6cd4a21c3ee48c</sys_package>
@@ -175,7 +130,7 @@
             <sys_scope display_value="NSM Issue Tracker">510636e76fea3200ad6cd4a21c3ee48c</sys_scope>
             <sys_update_name>sys_ui_list_x_casus_nsm_issue_issue_null</sys_update_name>
             <sys_updated_by>gg622</sys_updated_by>
-            <sys_updated_on>2017-05-12 20:18:30</sys_updated_on>
+            <sys_updated_on>2017-05-30 22:14:59</sys_updated_on>
             <sys_user/>
             <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>

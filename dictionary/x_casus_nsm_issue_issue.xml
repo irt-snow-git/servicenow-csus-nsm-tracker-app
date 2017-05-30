@@ -8,7 +8,7 @@
         <element choice="1" dependent="issue_type" dependent_on_field="issue_type" label="Instrument" max_length="32" name="instrument" reference="x_casus_nsm_issue_instrument" type="reference" use_dependent_field="true">
             <choice/>
         </element>
-        <element choice="1" label="Issue type" mandatory="true" max_length="40" name="issue_type" type="string">
+        <element choice="1" label="Issue type" mandatory="true" max_length="40" name="issue_type" reference="x_casus_nsm_issue_issue_type" type="reference">
             <choice>
                 <element label="Atomic Absorbance" sequence="1" value="atomic absorbance"/>
                 <element label="Fluorescence Spectrophotometer" sequence="2" value="fluorescence spectrophotometer"/>

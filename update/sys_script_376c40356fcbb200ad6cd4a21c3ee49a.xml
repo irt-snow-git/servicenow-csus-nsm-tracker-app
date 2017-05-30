@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_label/>
+        <action_name/>
+        <action_query>false</action_query>
+        <action_run_at>server</action_run_at>
+        <action_update>false</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <application/>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_casus_nsm_issue_issue</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Provision User with NSM App Role</name>
+        <onclick/>
+        <order>100</order>
+        <priority>100</priority>
+        <read_access_action>false</read_access_action>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	// Provision user with the x_casus_nsm_issue.chem_user role if they submit an issue, if they don't already have the role
+	
+	//check submitter roles
+	var rchk = new GlideRecord('sys_user_has_role');
+	rchk.addQuery('user', current.submitter);
+	rchk.addQuery('role', '25063a2b6fea3200ad6cd4a21c3ee45b'); //x_casus_nsm_issue.chem_user sys_id
+	rchk.query();
+	
+	//user doesn't have role, provision
+	if(!rchk.next()) {
+		rchk.initialize();
+		
+		rchk.user = current.submitter;
+		rchk.role = '25063a2b6fea3200ad6cd4a21c3ee45b';
+		
+		rchk.insert();
+	}
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>nicholasmyers</sys_created_by>
+        <sys_created_on>2017-05-30 21:03:07</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>376c40356fcbb200ad6cd4a21c3ee49a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Provision User with NSM App Role</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NSM Issue Tracker" source="x_casus_nsm_issue">510636e76fea3200ad6cd4a21c3ee48c</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="NSM Issue Tracker">510636e76fea3200ad6cd4a21c3ee48c</sys_scope>
+        <sys_update_name>sys_script_376c40356fcbb200ad6cd4a21c3ee49a</sys_update_name>
+        <sys_updated_by>nicholasmyers</sys_updated_by>
+        <sys_updated_on>2017-05-30 21:29:04</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+</record_update>

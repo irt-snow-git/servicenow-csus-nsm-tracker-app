@@ -2,7 +2,9 @@
 <record_update table="sys_ui_page">
     <sys_ui_page action="INSERT_OR_UPDATE">
         <category>general</category>
-        <client_script><![CDATA[!function($, window, document) {
+        <client_script><![CDATA[//Picker stuff you probably should just ignore
+
+!function($, window, document) {
     "use strict";
     function Wickedpicker(e, t) {
         this.element = $(e),
@@ -331,9 +333,8 @@ $('.timepicker').wickedpicker();
 <div ng-app="myApp">
 <!-- References-->
 <div class="container full-height" id="issue-div" style="padding:50px;">
-	<div>
+	
 		<div ng-controller="Issue" id="issue2-div">
-
 			<h1>Submit an Issue</h1>
 			<p>Text goes here lol</p>
 
@@ -346,13 +347,13 @@ $('.timepicker').wickedpicker();
 							<div class="row col-lg-6">
 								<div class="form-group col-lg-9 col-lg-offset-1 col-md-4 col-sm-4 col-xs-12">
 									<label for="submitter_input">Submitter</label>
-									<input type="text" ng-model="data.submitter" class="form-control" id="submitter_input"/>
+									<input type="text" ng-model="data.submitter" class="form-control" id="submitter_input" disabled="disabled"/>
 								</div>
 								<div class="form-group col-lg-9 col-lg-offset-1 col-md-4 col-sm-4 col-xs-12">
 									<label for="issue_input">Issue Type</label>
 									<select class="form-control" id="issue_input" ng-model="data.issue_type"
 											ng-options="w.issue_sys_id as w.issue_name for w in issuesList track by w.issue_sys_id" >
-										<option value=""></option>
+										<option value="">Select Issue Type</option>
 									</select>
 								</div>
 								<div class="form-group col-lg-9 col-lg-offset-1 col-md-4 col-sm-4 col-xs-12">
@@ -361,7 +362,7 @@ $('.timepicker').wickedpicker();
 											ng-disabled="!data.issue_type" 
 											ng-options="j.instrument_sys_id as j.instrument_name for j in ((issuesList | filter:{'issue_sys_id': data.issue_type})[0].instruments)
 														track by j.instrument_sys_id">
-										<option value="">Select Issue Type</option>
+										<option value=""></option>
 									</select>
 								</div>
 							</div>
@@ -406,18 +407,11 @@ $('.timepicker').wickedpicker();
 					</div>
 				</div>
 			<!-- End Repeat -->
-				<div class="row col-lg-10" style="padding-left:30px;" ng-if="async == 1">
+				<div class="row col-lg-10 col-md-10 col-sm-10" style="padding-left:30px;" ng-if="async == 1">
 					<button class="btn-submit" ng-click="submitRecordAjax()"> Submit </button>
 				</div>
-			
-			
-			
-
-
-		</div> 
-		<!-- END Supplies Received Controller-->
 				
-	</div>
+	</div><!-- END Supplies Received Controller-->
 	</div>
 </div>
 
@@ -429,7 +423,7 @@ $('.timepicker').wickedpicker();
         <sys_created_on>2017-05-15 22:11:25</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>28425ffc6ff2b200ad6cd4a21c3ee42f</sys_id>
-        <sys_mod_count>91</sys_mod_count>
+        <sys_mod_count>97</sys_mod_count>
         <sys_name>Submit Issue</sys_name>
         <sys_package display_value="NSM Issue Tracker" source="x_casus_nsm_issue">510636e76fea3200ad6cd4a21c3ee48c</sys_package>
         <sys_policy/>
@@ -437,6 +431,6 @@ $('.timepicker').wickedpicker();
         <sys_scope display_value="NSM Issue Tracker">510636e76fea3200ad6cd4a21c3ee48c</sys_scope>
         <sys_update_name>sys_ui_page_28425ffc6ff2b200ad6cd4a21c3ee42f</sys_update_name>
         <sys_updated_by>gg622</sys_updated_by>
-        <sys_updated_on>2017-05-26 21:09:55</sys_updated_on>
+        <sys_updated_on>2017-05-30 21:34:53</sys_updated_on>
     </sys_ui_page>
 </record_update>
