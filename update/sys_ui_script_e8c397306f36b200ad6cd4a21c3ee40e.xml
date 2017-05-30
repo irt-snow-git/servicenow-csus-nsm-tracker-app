@@ -16,7 +16,6 @@ tempDateString += "/" + tempDate.getFullYear();// returns year
 
 // - - - Begin Controller - - - //
 myApp.controller('Issue', ['$scope', function ($scope) {
-	//$scope.currentDate = new Date(getCurrentDate());//Date object of current date
 	$scope.async = 0;
 	$scope.submission = 0;
 	$scope.data = {//Holds data that we will send to server for insert
@@ -51,11 +50,12 @@ myApp.controller('Issue', ['$scope', function ($scope) {
 		var timepicker = $('.timepicker').wickedpicker();
 		var tempTime = timepicker.wickedpicker('time');
 		tempTime = tempTime.replace(/\s+/g, '');
-		tempTime = tempTime.slice(0,5) + " " + tempTime.slice(5);
+		tempTime = tempTime.slice(0,5) + " " + tempTime.slice(5);//FIX
 		var time24 = ConvertTimeFormat(tempTime);
+		alert(time24);
 		stringDate = stringDate + " " + time24 + ":00"; 
 		console.log($scope.data);
-		alert(stringDate);
+		console.log(stringDate);
 
 		//Call to server to actually submit
 		var ajax = new GlideAjax('x_casus_nsm_issue.retrieveRecordsInTable');
@@ -164,6 +164,7 @@ function ConvertTimeFormat(str) {
     var hours = Number(time.match(/^(\d+)/)[1]);
     var minutes = Number(time.match(/:(\d+)/)[1]);
     var AMPM = time.match(/\s(.*)$/)[1];
+	alert(hours + " " +  minutes + " "+ AMPM);
     if (AMPM == "PM" && hours < 12) hours = hours + 12;
     if (AMPM == "AM" && hours == 12) hours = hours - 12;
     var sHours = hours.toString();
@@ -178,7 +179,7 @@ function ConvertTimeFormat(str) {
         <sys_created_on>2017-05-15 22:16:45</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>e8c397306f36b200ad6cd4a21c3ee40e</sys_id>
-        <sys_mod_count>112</sys_mod_count>
+        <sys_mod_count>120</sys_mod_count>
         <sys_name>x_casus_nsm_issue.angular_controller</sys_name>
         <sys_package display_value="NSM Issue Tracker" source="x_casus_nsm_issue">510636e76fea3200ad6cd4a21c3ee48c</sys_package>
         <sys_policy/>
@@ -186,7 +187,7 @@ function ConvertTimeFormat(str) {
         <sys_scope display_value="NSM Issue Tracker">510636e76fea3200ad6cd4a21c3ee48c</sys_scope>
         <sys_update_name>sys_ui_script_e8c397306f36b200ad6cd4a21c3ee40e</sys_update_name>
         <sys_updated_by>gg622</sys_updated_by>
-        <sys_updated_on>2017-05-30 21:49:49</sys_updated_on>
+        <sys_updated_on>2017-05-30 23:00:08</sys_updated_on>
         <use_scoped_format>false</use_scoped_format>
     </sys_ui_script>
 </record_update>

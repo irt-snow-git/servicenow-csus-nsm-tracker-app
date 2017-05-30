@@ -31,11 +31,11 @@
         <mandatory>false</mandatory>
         <message/>
         <message_html><![CDATA[<p>Submitter: ${submitter}</p>
+<p>Priority: ${priority}</p>
 <p>Issue type: ${issue_type}</p>
 <p>Instrument: ${instrument}</p>
 <p>Room ${instrument.room}</p>
-<p>Number: ${number}</p>
-<p>Priority: ${priority}</p>
+<p>&nbsp;</p>
 <p>Notes: ${notes}</p>
 <p>&nbsp;</p>
 <p>Click here to view this issue: ${URI_REF}</p>]]></message_html>
@@ -52,7 +52,7 @@
         <send_self>false</send_self>
         <sms_alternate/>
         <style/>
-        <subject>New Issue ${number} - with ${instrument} in ${instrument.room}</subject>
+        <subject>New Issue ${number} - ${issue_type} issue with ${instrument} - Priority: ${priority}</subject>
         <subscribable>false</subscribable>
         <sys_class_name>sysevent_email_action</sys_class_name>
         <sys_created_by>longlim</sys_created_by>
@@ -60,7 +60,7 @@
         <sys_customer_update>true</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>7522f93d0f72f20012e4348ce1050e97</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>Notify Fulfiller on Chemistry Issue Open</sys_name>
         <sys_overrides/>
         <sys_package display_value="NSM Issue Tracker" source="x_casus_nsm_issue">510636e76fea3200ad6cd4a21c3ee48c</sys_package>
@@ -69,7 +69,7 @@
         <sys_scope display_value="NSM Issue Tracker">510636e76fea3200ad6cd4a21c3ee48c</sys_scope>
         <sys_update_name>sysevent_email_action_7522f93d0f72f20012e4348ce1050e97</sys_update_name>
         <sys_updated_by>nicholasmyers</sys_updated_by>
-        <sys_updated_on>2017-05-30 17:24:29</sys_updated_on>
+        <sys_updated_on>2017-05-30 22:28:40</sys_updated_on>
         <sys_version>2</sys_version>
         <template/>
         <type>email</type>

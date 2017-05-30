@@ -306,8 +306,9 @@
 $( function() {
     $( "#datepicker" ).datepicker();
  } );
+	
 $( function() {
-$('.timepicker').wickedpicker();
+	$('.timepicker').wickedpicker();
 } );
 
 
@@ -335,8 +336,8 @@ $('.timepicker').wickedpicker();
 <div class="container full-height" id="issue-div" style="padding:50px;">
 	
 		<div ng-controller="Issue" id="issue2-div">
-			<h1>Submit an Issue</h1>
-			<p>Text goes here lol</p>
+			<h1>Submit Issue</h1>
+			<p>Use the form below to submit an issue with a scientific instrument used in the Chemistry department.</p>
 
 					<div class="col-lg-10 col-md-10 col-sm-12">
 					<div class="panel panel-default">
@@ -423,7 +424,7 @@ $('.timepicker').wickedpicker();
         <sys_created_on>2017-05-15 22:11:25</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>28425ffc6ff2b200ad6cd4a21c3ee42f</sys_id>
-        <sys_mod_count>97</sys_mod_count>
+        <sys_mod_count>100</sys_mod_count>
         <sys_name>Submit Issue</sys_name>
         <sys_package display_value="NSM Issue Tracker" source="x_casus_nsm_issue">510636e76fea3200ad6cd4a21c3ee48c</sys_package>
         <sys_policy/>
@@ -431,6 +432,6 @@ $('.timepicker').wickedpicker();
         <sys_scope display_value="NSM Issue Tracker">510636e76fea3200ad6cd4a21c3ee48c</sys_scope>
         <sys_update_name>sys_ui_page_28425ffc6ff2b200ad6cd4a21c3ee42f</sys_update_name>
         <sys_updated_by>gg622</sys_updated_by>
-        <sys_updated_on>2017-05-30 21:34:53</sys_updated_on>
+        <sys_updated_on>2017-05-30 22:29:42</sys_updated_on>
     </sys_ui_page>
 </record_update>
