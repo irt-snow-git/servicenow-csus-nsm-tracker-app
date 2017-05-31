@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
     <element label="Nsm Issue M2m Instruments Issue Types" max_length="40" name="x_casus_nsm_issue_m2m_instruments_issue_types" type="collection">
-        <element label="Instrument" max_length="32" name="instrument_id" reference="x_casus_nsm_issue_instrument" type="reference"/>
-        <element label="Issue Type" max_length="32" name="issue_type" reference="x_casus_nsm_issue_issue_type" type="reference"/>
+        <element label="Instrument" mandatory="true" max_length="32" name="instrument_id" reference="x_casus_nsm_issue_instrument" type="reference"/>
+        <element label="Issue Type" mandatory="true" max_length="32" name="issue_type" reference="x_casus_nsm_issue_issue_type" type="reference"/>
         <index name="index">
             <element name="issue_type"/>
         </index>

@@ -2,7 +2,7 @@
 <database>
     <element label="Instrument" max_length="40" name="x_casus_nsm_issue_instrument" type="collection">
         <element label="Contact Name" max_length="40" name="contact_name" type="string"/>
-        <element display="true" label="Instrument ID" max_length="40" name="instrument_id" type="string" unique="true"/>
+        <element display="true" label="Instrument ID" mandatory="true" max_length="40" name="instrument_id" type="string" unique="true"/>
         <element label="Model" max_length="40" name="model" type="string"/>
         <element label="Room" max_length="32" name="room" reference="cmn_location" type="reference"/>
         <element label="Serial Number" max_length="40" name="serial_number" type="string"/>
