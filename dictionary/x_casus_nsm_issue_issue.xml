@@ -43,7 +43,7 @@
                 <element label="3 - Routine" value="3"/>
             </choice>
         </element>
-        <element label="Resolution" max_length="4000" name="resolution" type="journal_input"/>
+        <element label="Resolution" max_length="4000" name="resolution" type="string"/>
         <element choice="3" default="1" label="State" max_length="40" name="state" type="integer">
             <choice>
                 <element label="Open" sequence="1" value="1"/>
