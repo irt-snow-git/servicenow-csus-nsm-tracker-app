@@ -8,11 +8,11 @@
         <script><![CDATA[var myApp = angular.module('myApp', []);
 var instrumentReferences = [];//Global variable to hold array of instruments
 instrumentReferences = getReferences();//AJAX call
+
 var tempDate = new Date(getCurrentDate());//AJAX to get current date. Use string below to format it
 var tempDateString = tempDate.getMonth() + 1;  // returns 0 - 11, so add 1
 tempDateString += "/" + tempDate.getDate();    // returns day
 tempDateString += "/" + tempDate.getFullYear();// returns year
-
 
 // - - - Begin Controller - - - //
 myApp.controller('Issue', ['$scope', function ($scope) {
@@ -55,7 +55,7 @@ myApp.controller('Issue', ['$scope', function ($scope) {
 		date = new Date(date);
 		var stringDate = date.toISOString();
 		stringDate = stringDate.substr(0,10);//Get the first few characters, removing extra stuff
-		// Time stuff
+		// Time stuff //
 		var timepicker = $('.timepicker').wickedpicker();
 		var tempTime = timepicker.wickedpicker('time');
 		tempTime = tempTime.replace(/\s+/g, '');//Remove spaces that the jquery plugin adds between semicolon
@@ -64,7 +64,6 @@ myApp.controller('Issue', ['$scope', function ($scope) {
 		tempTime = tempTime.slice(0,len-2) + " " + tempTime.slice(len-2);
 		var time24 = ConvertTimeFormat(tempTime);// convert to 24 hour format
 		stringDate = stringDate + " " + time24 + ":00"; 
-		console.log($scope.data);
 		//Call to server to actually submit
 		var ajax = new GlideAjax('x_casus_nsm_issue.retrieveRecordsInTable');
 		ajax.addParam('sysparm_name','submitRecord');
@@ -75,8 +74,7 @@ myApp.controller('Issue', ['$scope', function ($scope) {
 		ajax.addParam('sysparm_subject', $scope.data.subject);
 		ajax.addParam('sysparm_notes', $scope.data.notes);
 		ajax.addParam('sysparm_date_time', stringDate);
-		ajax.getXML(function ()  {
-		});
+		ajax.getXML(function () {});
 		$scope.submission = 1;
 
 		//Redirect user
@@ -166,7 +164,9 @@ function getCurrentDate() {
 	//Date is weird, this replaces hyphens with slashes, which gives proper date
 	return date.replace(/-/g, '\/');
 }
-
+/*
+ Converts AM/PM time to 24 hour time. This expects format of (##:## AA) [note the space]
+*/
 function ConvertTimeFormat(str) {
     var time = str;
     var hours = Number(time.match(/^(\d+)/)[1]);
@@ -186,7 +186,7 @@ function ConvertTimeFormat(str) {
         <sys_created_on>2017-05-15 22:16:45</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>e8c397306f36b200ad6cd4a21c3ee40e</sys_id>
-        <sys_mod_count>140</sys_mod_count>
+        <sys_mod_count>141</sys_mod_count>
         <sys_name>x_casus_nsm_issue.angular_controller</sys_name>
         <sys_package display_value="NSM Issue Tracker" source="x_casus_nsm_issue">510636e76fea3200ad6cd4a21c3ee48c</sys_package>
         <sys_policy/>
@@ -194,7 +194,7 @@ function ConvertTimeFormat(str) {
         <sys_scope display_value="NSM Issue Tracker">510636e76fea3200ad6cd4a21c3ee48c</sys_scope>
         <sys_update_name>sys_ui_script_e8c397306f36b200ad6cd4a21c3ee40e</sys_update_name>
         <sys_updated_by>gg622</sys_updated_by>
-        <sys_updated_on>2017-05-31 19:38:23</sys_updated_on>
+        <sys_updated_on>2017-05-31 19:48:00</sys_updated_on>
         <use_scoped_format>false</use_scoped_format>
     </sys_ui_script>
 </record_update>
