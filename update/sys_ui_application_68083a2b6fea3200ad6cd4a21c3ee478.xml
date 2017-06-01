@@ -5,14 +5,14 @@
         <hint/>
         <name>Chemistry Issue Tracker</name>
         <order/>
-        <roles>x_casus_nsm_issue.user</roles>
+        <roles>x_casus_nsm_issue.chem_user,x_casus_nsm_issue.chem_manager</roles>
         <sys_class_name>sys_ui_application</sys_class_name>
         <sys_created_by>gg622</sys_created_by>
         <sys_created_on>2017-05-11 23:02:20</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>68083a2b6fea3200ad6cd4a21c3ee478</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Chemistry Issue Tracker</sys_name>
         <sys_overrides/>
         <sys_package display_value="NSM Issue Tracker" source="x_casus_nsm_issue">510636e76fea3200ad6cd4a21c3ee48c</sys_package>
@@ -21,6 +21,6 @@
         <sys_scope display_value="NSM Issue Tracker">510636e76fea3200ad6cd4a21c3ee48c</sys_scope>
         <sys_update_name>sys_ui_application_68083a2b6fea3200ad6cd4a21c3ee478</sys_update_name>
         <sys_updated_by>nicholasmyers</sys_updated_by>
-        <sys_updated_on>2017-05-30 19:57:18</sys_updated_on>
+        <sys_updated_on>2017-06-01 18:45:07</sys_updated_on>
     </sys_ui_application>
 </record_update>
