@@ -47,7 +47,7 @@
         <sys_created_by>nicholasmyers</sys_created_by>
         <sys_created_on>2017-05-19 16:32:48</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>14616c2b6f767600ad6cd4a21c3ee412</sys_id>
+        <sys_id>75c213626f6fbe00ad6cd4a21c3ee45a</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Serial Number</sys_name>
         <sys_package display_value="NSM Issue Tracker" source="x_casus_nsm_issue">510636e76fea3200ad6cd4a21c3ee48c</sys_package>
@@ -56,7 +56,7 @@
         <sys_scope display_value="NSM Issue Tracker">510636e76fea3200ad6cd4a21c3ee48c</sys_scope>
         <sys_update_name>sys_dictionary_u_imp_tmpl_x_casus_nsm_issue_instrument_u_serial_number</sys_update_name>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2017-05-23 22:20:07</sys_updated_on>
+        <sys_updated_on>2017-06-27 15:28:24</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

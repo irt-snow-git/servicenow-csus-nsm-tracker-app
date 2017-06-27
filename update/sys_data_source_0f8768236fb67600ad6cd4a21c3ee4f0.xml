@@ -42,7 +42,7 @@
         <sys_class_name>sys_data_source</sys_class_name>
         <sys_created_by>gg622</sys_created_by>
         <sys_created_on>2017-05-23 22:46:53</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>0f8768236fb67600ad6cd4a21c3ee4f0</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_name>x_casus_nsm_issue_instrument.xls (Upload</sys_name>

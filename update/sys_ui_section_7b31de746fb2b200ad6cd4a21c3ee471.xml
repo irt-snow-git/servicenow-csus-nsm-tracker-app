@@ -4,98 +4,98 @@
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>instrument_id</element>
             <position>0</position>
-            <sys_created_by>stephen.disher</sys_created_by>
-            <sys_created_on>2017-05-18 17:31:58</sys_created_on>
-            <sys_id>158fa9f90f72f20012e4348ce1050e90</sys_id>
+            <sys_created_by>nicholasmyers</sys_created_by>
+            <sys_created_on>2017-06-27 17:38:08</sys_created_on>
+            <sys_id>39807fe66fafbe00ad6cd4a21c3ee45b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_casus_nsm_issue_instrument" sys_domain="global" view="Default view">7b31de746fb2b200ad6cd4a21c3ee471</sys_ui_section>
-            <sys_updated_by>stephen.disher</sys_updated_by>
-            <sys_updated_on>2017-05-18 17:31:58</sys_updated_on>
+            <sys_updated_by>nicholasmyers</sys_updated_by>
+            <sys_updated_on>2017-06-27 17:38:08</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>model</element>
             <position>1</position>
-            <sys_created_by>stephen.disher</sys_created_by>
-            <sys_created_on>2017-05-18 17:31:58</sys_created_on>
-            <sys_id>958fa9f90f72f20012e4348ce1050e90</sys_id>
+            <sys_created_by>nicholasmyers</sys_created_by>
+            <sys_created_on>2017-06-27 17:38:08</sys_created_on>
+            <sys_id>b9807fe66fafbe00ad6cd4a21c3ee45b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_casus_nsm_issue_instrument" sys_domain="global" view="Default view">7b31de746fb2b200ad6cd4a21c3ee471</sys_ui_section>
-            <sys_updated_by>stephen.disher</sys_updated_by>
-            <sys_updated_on>2017-05-18 17:31:58</sys_updated_on>
+            <sys_updated_by>nicholasmyers</sys_updated_by>
+            <sys_updated_on>2017-06-27 17:38:08</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
             <position>2</position>
-            <sys_created_by>stephen.disher</sys_created_by>
-            <sys_created_on>2017-05-18 17:31:58</sys_created_on>
-            <sys_id>198fa9f90f72f20012e4348ce1050e90</sys_id>
+            <sys_created_by>nicholasmyers</sys_created_by>
+            <sys_created_on>2017-06-27 17:38:08</sys_created_on>
+            <sys_id>3d807fe66fafbe00ad6cd4a21c3ee45b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_casus_nsm_issue_instrument" sys_domain="global" view="Default view">7b31de746fb2b200ad6cd4a21c3ee471</sys_ui_section>
-            <sys_updated_by>stephen.disher</sys_updated_by>
-            <sys_updated_on>2017-05-18 17:31:58</sys_updated_on>
+            <sys_updated_by>nicholasmyers</sys_updated_by>
+            <sys_updated_on>2017-06-27 17:38:08</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>serial_number</element>
             <position>3</position>
-            <sys_created_by>stephen.disher</sys_created_by>
-            <sys_created_on>2017-05-18 17:31:58</sys_created_on>
-            <sys_id>998fa9f90f72f20012e4348ce1050e90</sys_id>
+            <sys_created_by>nicholasmyers</sys_created_by>
+            <sys_created_on>2017-06-27 17:38:08</sys_created_on>
+            <sys_id>bd807fe66fafbe00ad6cd4a21c3ee45b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_casus_nsm_issue_instrument" sys_domain="global" view="Default view">7b31de746fb2b200ad6cd4a21c3ee471</sys_ui_section>
-            <sys_updated_by>stephen.disher</sys_updated_by>
-            <sys_updated_on>2017-05-18 17:31:58</sys_updated_on>
+            <sys_updated_by>nicholasmyers</sys_updated_by>
+            <sys_updated_on>2017-06-27 17:38:08</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>room</element>
             <position>4</position>
-            <sys_created_by>stephen.disher</sys_created_by>
-            <sys_created_on>2017-05-18 17:31:58</sys_created_on>
-            <sys_id>1d8fa9f90f72f20012e4348ce1050e90</sys_id>
+            <sys_created_by>nicholasmyers</sys_created_by>
+            <sys_created_on>2017-06-27 17:38:08</sys_created_on>
+            <sys_id>31807fe66fafbe00ad6cd4a21c3ee45c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_casus_nsm_issue_instrument" sys_domain="global" view="Default view">7b31de746fb2b200ad6cd4a21c3ee471</sys_ui_section>
-            <sys_updated_by>stephen.disher</sys_updated_by>
-            <sys_updated_on>2017-05-18 17:31:58</sys_updated_on>
+            <sys_updated_by>nicholasmyers</sys_updated_by>
+            <sys_updated_on>2017-06-27 17:38:08</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>contact_name</element>
+            <element>.end_split</element>
             <position>5</position>
-            <sys_created_by>stephen.disher</sys_created_by>
-            <sys_created_on>2017-05-18 17:31:58</sys_created_on>
-            <sys_id>9d8fa9f90f72f20012e4348ce1050e90</sys_id>
+            <sys_created_by>nicholasmyers</sys_created_by>
+            <sys_created_on>2017-06-27 17:38:08</sys_created_on>
+            <sys_id>b1807fe66fafbe00ad6cd4a21c3ee45c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_casus_nsm_issue_instrument" sys_domain="global" view="Default view">7b31de746fb2b200ad6cd4a21c3ee471</sys_ui_section>
-            <sys_updated_by>stephen.disher</sys_updated_by>
-            <sys_updated_on>2017-05-18 17:31:58</sys_updated_on>
+            <sys_updated_by>nicholasmyers</sys_updated_by>
+            <sys_updated_on>2017-06-27 17:38:08</sys_updated_on>
             <sys_user/>
-            <type/>
+            <type>.end_split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>issue_type</element>
+            <element>user_manual</element>
             <position>6</position>
-            <sys_created_by>gg622</sys_created_by>
-            <sys_created_on>2017-05-19 19:48:19</sys_created_on>
-            <sys_id>d0589bc60f3af20012e4348ce1050ed3</sys_id>
+            <sys_created_by>nicholasmyers</sys_created_by>
+            <sys_created_on>2017-06-27 17:38:08</sys_created_on>
+            <sys_id>35807fe66fafbe00ad6cd4a21c3ee45c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_casus_nsm_issue_instrument" sys_domain="global" view="Default view">7b31de746fb2b200ad6cd4a21c3ee471</sys_ui_section>
-            <sys_updated_by>gg622</sys_updated_by>
-            <sys_updated_on>2017-05-19 19:48:19</sys_updated_on>
+            <sys_updated_by>nicholasmyers</sys_updated_by>
+            <sys_updated_on>2017-06-27 17:38:08</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -110,7 +110,7 @@
             <sys_customer_update>false</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_id>7b31de746fb2b200ad6cd4a21c3ee471</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_mod_count>7</sys_mod_count>
             <sys_name>x_casus_nsm_issue_instrument</sys_name>
             <sys_overrides display_value="">global</sys_overrides>
             <sys_package display_value="NSM Issue Tracker" source="x_casus_nsm_issue">510636e76fea3200ad6cd4a21c3ee48c</sys_package>
@@ -118,8 +118,8 @@
             <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
             <sys_scope display_value="NSM Issue Tracker">510636e76fea3200ad6cd4a21c3ee48c</sys_scope>
             <sys_update_name>sys_ui_section_7b31de746fb2b200ad6cd4a21c3ee471</sys_update_name>
-            <sys_updated_by>longlim</sys_updated_by>
-            <sys_updated_on>2017-05-15 17:25:24</sys_updated_on>
+            <sys_updated_by>nicholasmyers</sys_updated_by>
+            <sys_updated_on>2017-06-27 17:38:08</sys_updated_on>
             <sys_user/>
             <title>true</title>
             <view display_value="Default view" name="NULL">Default view</view>

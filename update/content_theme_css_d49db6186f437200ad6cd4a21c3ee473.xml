@@ -7,7 +7,7 @@
         <sys_class_name>content_theme_css</sys_class_name>
         <sys_created_by>gg622</sys_created_by>
         <sys_created_on>2017-05-26 17:37:47</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>d49db6186f437200ad6cd4a21c3ee473</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>UI_DatePicker.ui-jquery datepicker</sys_name>

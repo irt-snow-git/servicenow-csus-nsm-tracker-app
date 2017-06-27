@@ -52,7 +52,7 @@
         <sys_created_by>gg622</sys_created_by>
         <sys_created_on>2017-05-15 20:41:15</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>10616c2b6f767600ad6cd4a21c3ee41a</sys_id>
+        <sys_id>42c213626f6fbe00ad6cd4a21c3ee462</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Room</sys_name>
         <sys_package display_value="NSM Issue Tracker" source="x_casus_nsm_issue">510636e76fea3200ad6cd4a21c3ee48c</sys_package>
@@ -61,7 +61,7 @@
         <sys_scope display_value="NSM Issue Tracker">510636e76fea3200ad6cd4a21c3ee48c</sys_scope>
         <sys_update_name>sys_dictionary_x_casus_nsm_issue_instrument_room</sys_update_name>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2017-05-23 22:20:11</sys_updated_on>
+        <sys_updated_on>2017-06-27 15:28:26</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

@@ -62,6 +62,9 @@
             <element name="submitter"/>
         </index>
         <index name="index2">
+            <element name="issue_type"/>
+        </index>
+        <index name="index3">
             <element name="instrument"/>
         </index>
     </element>

@@ -57,7 +57,7 @@
         <sys_class_name>sysevent_email_action</sys_class_name>
         <sys_created_by>longlim</sys_created_by>
         <sys_created_on>2017-05-18 17:44:50</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>7522f93d0f72f20012e4348ce1050e97</sys_id>
         <sys_mod_count>6</sys_mod_count>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_section caption="Preventative Maintenance" section_id="d0651b266f6fbe00ad6cd4a21c3ee476" sys_domain="global" table="x_casus_nsm_issue_instrument" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>last_performed</element>
+            <position>0</position>
+            <sys_created_by>nicholasmyers</sys_created_by>
+            <sys_created_on>2017-06-27 17:38:34</sys_created_on>
+            <sys_id>c0a0ffe66fafbe00ad6cd4a21c3ee48f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Preventative Maintenance" display_value="Preventative Maintenance" name="x_casus_nsm_issue_instrument" sys_domain="global" view="Default view">d0651b266f6fbe00ad6cd4a21c3ee476</sys_ui_section>
+            <sys_updated_by>nicholasmyers</sys_updated_by>
+            <sys_updated_on>2017-06-27 17:38:34</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>next_scheduled</element>
+            <position>1</position>
+            <sys_created_by>nicholasmyers</sys_created_by>
+            <sys_created_on>2017-06-27 17:38:34</sys_created_on>
+            <sys_id>44a0ffe66fafbe00ad6cd4a21c3ee48f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Preventative Maintenance" display_value="Preventative Maintenance" name="x_casus_nsm_issue_instrument" sys_domain="global" view="Default view">d0651b266f6fbe00ad6cd4a21c3ee476</sys_ui_section>
+            <sys_updated_by>nicholasmyers</sys_updated_by>
+            <sys_updated_on>2017-06-27 17:38:34</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>2</position>
+            <sys_created_by>nicholasmyers</sys_created_by>
+            <sys_created_on>2017-06-27 17:38:34</sys_created_on>
+            <sys_id>c4a0ffe66fafbe00ad6cd4a21c3ee48f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Preventative Maintenance" display_value="Preventative Maintenance" name="x_casus_nsm_issue_instrument" sys_domain="global" view="Default view">d0651b266f6fbe00ad6cd4a21c3ee476</sys_ui_section>
+            <sys_updated_by>nicholasmyers</sys_updated_by>
+            <sys_updated_on>2017-06-27 17:38:34</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>contact_name</element>
+            <position>3</position>
+            <sys_created_by>nicholasmyers</sys_created_by>
+            <sys_created_on>2017-06-27 17:38:34</sys_created_on>
+            <sys_id>48a0ffe66fafbe00ad6cd4a21c3ee48f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Preventative Maintenance" display_value="Preventative Maintenance" name="x_casus_nsm_issue_instrument" sys_domain="global" view="Default view">d0651b266f6fbe00ad6cd4a21c3ee476</sys_ui_section>
+            <sys_updated_by>nicholasmyers</sys_updated_by>
+            <sys_updated_on>2017-06-27 17:38:34</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>phone_number</element>
+            <position>4</position>
+            <sys_created_by>nicholasmyers</sys_created_by>
+            <sys_created_on>2017-06-27 17:38:34</sys_created_on>
+            <sys_id>c8a0ffe66fafbe00ad6cd4a21c3ee48f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Preventative Maintenance" display_value="Preventative Maintenance" name="x_casus_nsm_issue_instrument" sys_domain="global" view="Default view">d0651b266f6fbe00ad6cd4a21c3ee476</sys_ui_section>
+            <sys_updated_by>nicholasmyers</sys_updated_by>
+            <sys_updated_on>2017-06-27 17:38:34</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Preventative Maintenance</caption>
+            <header>false</header>
+            <name>x_casus_nsm_issue_instrument</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>coletonbuehler</sys_created_by>
+            <sys_created_on>2017-06-27 15:39:32</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_id>d0651b266f6fbe00ad6cd4a21c3ee476</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Preventative Maintenance</sys_name>
+            <sys_overrides display_value="">global</sys_overrides>
+            <sys_package display_value="NSM Issue Tracker" source="x_casus_nsm_issue">510636e76fea3200ad6cd4a21c3ee48c</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="NSM Issue Tracker">510636e76fea3200ad6cd4a21c3ee48c</sys_scope>
+            <sys_update_name>sys_ui_section_d0651b266f6fbe00ad6cd4a21c3ee476</sys_update_name>
+            <sys_updated_by>coletonbuehler</sys_updated_by>
+            <sys_updated_on>2017-06-27 15:39:32</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

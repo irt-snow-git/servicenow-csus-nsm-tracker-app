@@ -418,7 +418,7 @@ $( function() {
         <sys_class_name>sys_ui_page</sys_class_name>
         <sys_created_by>gg622</sys_created_by>
         <sys_created_on>2017-05-15 22:11:25</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>28425ffc6ff2b200ad6cd4a21c3ee42f</sys_id>
         <sys_mod_count>109</sys_mod_count>
         <sys_name>Submit Issue</sys_name>
