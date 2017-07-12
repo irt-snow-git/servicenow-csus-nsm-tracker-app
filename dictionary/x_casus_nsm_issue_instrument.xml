@@ -7,7 +7,7 @@
         <element label="Model" max_length="40" name="model" type="string"/>
         <element label="Next Scheduled" max_length="40" name="next_scheduled" type="glide_date_time"/>
         <element hint="Phone number for vendor." label="Phone Number" max_length="40" name="phone_number" type="string"/>
-        <element label="Room" max_length="32" name="room" reference="cmn_location" type="reference"/>
+        <element label="Room" max_length="32" name="room" type="string"/>
         <element label="Serial Number" max_length="40" name="serial_number" type="string"/>
         <element hint="Please enter a URL here." label="User Manual" max_length="250" name="user_manual" type="string"/>
         <index name="index">
