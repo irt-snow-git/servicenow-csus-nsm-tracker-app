@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
     <element label="Instrument" max_length="40" name="x_casus_nsm_issue_instrument" type="collection">
-        <element label="Contact Name" max_length="40" name="contact_name" type="string"/>
+        <element label="Vendor Contact Name" max_length="40" name="contact_name" type="string"/>
         <element display="true" label="Instrument ID" mandatory="true" max_length="40" name="instrument_id" type="string" unique="true"/>
         <element label="Last Performed" max_length="40" name="last_performed" type="glide_date_time"/>
         <element label="Model" max_length="40" name="model" type="string"/>
         <element label="Next Scheduled" max_length="40" name="next_scheduled" type="glide_date_time"/>
+        <element label="Notes" max_length="10000" name="notes" type="string"/>
         <element hint="Phone number for vendor." label="Phone Number" max_length="40" name="phone_number" type="string"/>
         <element label="Room" max_length="32" name="room" type="string"/>
         <element label="Serial Number" max_length="40" name="serial_number" type="string"/>
