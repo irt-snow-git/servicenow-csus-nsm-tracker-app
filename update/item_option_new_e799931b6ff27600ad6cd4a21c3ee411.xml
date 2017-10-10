@@ -18,7 +18,7 @@
         <do_not_select_first>false</do_not_select_first>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <field/>
+        <field>submitter</field>
         <global>false</global>
         <help_tag>More information</help_tag>
         <help_text/>
@@ -33,7 +33,7 @@
         <lookup_value/>
         <macro/>
         <mandatory>true</mandatory>
-        <map_to_field>false</map_to_field>
+        <map_to_field>true</map_to_field>
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>false</mask_use_encryption>
         <name>submitter</name>
@@ -61,15 +61,15 @@
         <sys_created_on>2017-05-23 17:08:10</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>e799931b6ff27600ad6cd4a21c3ee411</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Submitter</sys_name>
         <sys_package display_value="NSM Issue Tracker" source="x_casus_nsm_issue">510636e76fea3200ad6cd4a21c3ee48c</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="NSM Issue Tracker">510636e76fea3200ad6cd4a21c3ee48c</sys_scope>
         <sys_update_name>item_option_new_e799931b6ff27600ad6cd4a21c3ee411</sys_update_name>
-        <sys_updated_by>gg622</sys_updated_by>
-        <sys_updated_on>2017-05-23 17:18:48</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2017-08-09 08:40:07</sys_updated_on>
         <table/>
         <tooltip/>
         <type>8</type>

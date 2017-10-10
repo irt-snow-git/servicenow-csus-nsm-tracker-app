@@ -36,7 +36,7 @@
             <sys_customer_update>false</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_id>58651b266f6fbe00ad6cd4a21c3ee476</sys_id>
-            <sys_mod_count>2</sys_mod_count>
+            <sys_mod_count>4</sys_mod_count>
             <sys_name>x_casus_nsm_issue_instrument</sys_name>
             <sys_overrides/>
             <sys_package display_value="NSM Issue Tracker" source="x_casus_nsm_issue">510636e76fea3200ad6cd4a21c3ee48c</sys_package>
@@ -44,8 +44,8 @@
             <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
             <sys_scope display_value="NSM Issue Tracker">510636e76fea3200ad6cd4a21c3ee48c</sys_scope>
             <sys_update_name>sys_ui_form_sections_58651b266f6fbe00ad6cd4a21c3ee476</sys_update_name>
-            <sys_updated_by>nicholasmyers</sys_updated_by>
-            <sys_updated_on>2017-07-20 16:54:59</sys_updated_on>
+            <sys_updated_by>stephen.disher</sys_updated_by>
+            <sys_updated_on>2017-10-10 21:19:15</sys_updated_on>
             <sys_user/>
             <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>

@@ -11,6 +11,7 @@
         <element label="Room" max_length="32" name="room" type="string"/>
         <element label="Serial Number" max_length="40" name="serial_number" type="string"/>
         <element hint="Please enter a URL here." label="User Manual" max_length="250" name="user_manual" type="string"/>
+        <element label="Manufacture Date" max_length="40" name="u_glide_date_1" type="glide_date"/>
         <index name="index">
             <element name="instrument_id"/>
         </index>

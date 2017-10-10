@@ -39,17 +39,17 @@
         <recipient_users>6e67a9646f18b200ad6cd4a21c3ee43f</recipient_users>
         <reply_to/>
         <send_self>false</send_self>
-        <sms_alternate><![CDATA[New P${priority} ${issue_type} issue w/ ${instrument}]]></sms_alternate>
+        <sms_alternate><![CDATA[${submitter.last_name}: ${issue_type} - ${instrument} P${priority} ]]></sms_alternate>
         <style/>
         <subject/>
         <subscribable>false</subscribable>
         <sys_class_name>sysevent_email_action</sys_class_name>
         <sys_created_by>nicholasmyers</sys_created_by>
         <sys_created_on>2017-05-30 03:45:19</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
+        <sys_customer_update>true</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>bb1564696f87b200ad6cd4a21c3ee46e</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>Notify Fulfiller on Issue Open (SMS)</sys_name>
         <sys_overrides/>
         <sys_package display_value="NSM Issue Tracker" source="x_casus_nsm_issue">510636e76fea3200ad6cd4a21c3ee48c</sys_package>
@@ -57,8 +57,8 @@
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="NSM Issue Tracker">510636e76fea3200ad6cd4a21c3ee48c</sys_scope>
         <sys_update_name>sysevent_email_action_bb1564696f87b200ad6cd4a21c3ee46e</sys_update_name>
-        <sys_updated_by>nicholasmyers</sys_updated_by>
-        <sys_updated_on>2017-05-30 22:30:16</sys_updated_on>
+        <sys_updated_by>stephen.disher</sys_updated_by>
+        <sys_updated_on>2017-10-10 21:26:25</sys_updated_on>
         <sys_version>2</sys_version>
         <template/>
         <type>email</type>
