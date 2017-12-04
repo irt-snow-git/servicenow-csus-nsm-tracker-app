@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_casus_nsm_issue.RetrieveIssueData</api_name>
+        <client_callable>true</client_callable>
+        <description>Returns NSM Issue record data to the client to display 'issue cards' of issues related to a selected instrument.</description>
+        <name>RetrieveIssueData</name>
+        <script><![CDATA[var RetrieveIssueData = Class.create();
+RetrieveIssueData.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+	getRelevantIssues : function() {
+
+		var issueGr = new GlideRecord('x_casus_nsm_issue_issue');
+		issueGr.addQuery('instrument', this.getParameter('sysparm_instrument'));
+		issueGr.orderBy('state');
+		issueGr.setLimit(5);
+		issueGr.query();
+		
+		
+		while(issueGr.next()) {
+			
+			var issues = this.newItem("fields");
+			issues.setAttribute("number", issueGr.number);
+			issues.setAttribute("submitter", issueGr.getDisplayValue('submitter'));
+			issues.setAttribute("subject", issueGr.subject);
+			issues.setAttribute("state", issueGr.getDisplayValue('state'));
+			issues.setAttribute("date_time", issueGr.date_time);
+			issues.setAttribute("sys_id", issueGr.sys_id);
+		}
+	},
+	
+    type: 'RetrieveIssueData'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>nicholasmyers</sys_created_by>
+        <sys_created_on>2017-12-01 20:05:29</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>91b37c150f76030012e4348ce1050e44</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>RetrieveIssueData</sys_name>
+        <sys_package display_value="NSM Issue Tracker" source="x_casus_nsm_issue">510636e76fea3200ad6cd4a21c3ee48c</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="NSM Issue Tracker">510636e76fea3200ad6cd4a21c3ee48c</sys_scope>
+        <sys_update_name>sys_script_include_91b37c150f76030012e4348ce1050e44</sys_update_name>
+        <sys_updated_by>nicholasmyers</sys_updated_by>
+        <sys_updated_on>2017-12-01 22:21:28</sys_updated_on>
+    </sys_script_include>
+</record_update>

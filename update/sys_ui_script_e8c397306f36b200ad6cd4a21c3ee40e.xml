@@ -13,6 +13,7 @@ var tempDate = new Date(getCurrentDate());//AJAX to get current date. Use string
 var tempDateString = tempDate.getMonth() + 1;  // returns 0 - 11, so add 1
 tempDateString += "/" + tempDate.getDate();    // returns day
 tempDateString += "/" + tempDate.getFullYear();// returns year
+var issueData = [];
 
 // - - - Begin Controller - - - //
 myApp.controller('Issue', ['$scope', function ($scope) {
@@ -29,6 +30,11 @@ myApp.controller('Issue', ['$scope', function ($scope) {
 		"notes": "",
 		"instrument": ""
 	};
+	
+	//holds the data to display current and previous issues of this instrument
+	$scope.issues = [];
+	$scope.issues = issueData;
+	
 	//Set default to current date
 	
 	$scope.data.date = tempDateString;
@@ -40,6 +46,60 @@ myApp.controller('Issue', ['$scope', function ($scope) {
 	$scope.async = 1;
 	
 	// - - - -End Init - - - -//
+	
+	// - - - -Form Update Checks - - - -//
+	//when instrument changes, reload the list of recent issues 
+	$scope.instrumentChanged = function(instrument) {
+		//clear the issue list
+		$scope.issues.length = 0;
+		//initiate new query for data
+		if(instrument && instrument.length != 0) {
+			var insJax = new GlideAjax('RetrieveIssueData');
+			insJax.addParam('sysparm_name', 'getRelevantIssues');
+			insJax.addParam('sysparm_instrument', instrument);
+			insJax.getXML(populateIssueData);
+		}
+		
+	};
+	
+	//handles ajax response when instrument is updated, sends data to view.
+	function populateIssueData(response) {
+		
+		var data = response.responseXML.getElementsByTagName("fields");
+		
+		for(var i = 0; i < data.length; i++) {
+			var number = data[i].getAttribute("number");
+			var submitter = data[i].getAttribute("submitter");
+			var subject = data[i].getAttribute("subject");
+			var state = data[i].getAttribute("state");
+			var date_time = data[i].getAttribute("date_time");
+			var sys_id = data[i].getAttribute("sys_id");
+			
+			
+			var issueObj = {
+				"number": "",
+				"submitter": "",
+				"subject": "",
+				"state": "",
+				"date_time": "",
+				"sys_id": ""
+			};
+			
+			
+			issueObj.number = number;
+			issueObj.submitter = submitter;
+			issueObj.subject = subject;
+			issueObj.state = state;
+			issueObj.date_time = date_time;
+			issueObj.sys_id = sys_id;
+			
+			issueData.push(issueObj);
+		}
+		$scope.issues = issueData;
+		$scope.$apply();
+	}
+	
+	// - - - -End Form Update Checks - - - -//
 	
 	// - - - Validation Checks - - - - //
 	$scope.validate = function () {
@@ -82,6 +142,7 @@ myApp.controller('Issue', ['$scope', function ($scope) {
 		var url = location.hostname;
 		window.location = url + '\/nav_to.do?uri=%2Fx_casus_nsm_issue_issue_list.do%3Fsysparm_query%3DsubmitterDYNAMIC90d1921e5f510100a9ad2572f2b477fe%255Estate%253D1%255EEQ';
 	};
+
 }])// - - -END Controller- - - //
 
 
@@ -185,9 +246,9 @@ function ConvertTimeFormat(str) {
         <sys_class_name>sys_ui_script</sys_class_name>
         <sys_created_by>gg622</sys_created_by>
         <sys_created_on>2017-05-15 22:16:45</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
+        <sys_customer_update>true</sys_customer_update>
         <sys_id>e8c397306f36b200ad6cd4a21c3ee40e</sys_id>
-        <sys_mod_count>145</sys_mod_count>
+        <sys_mod_count>186</sys_mod_count>
         <sys_name>x_casus_nsm_issue.angular_controller</sys_name>
         <sys_package display_value="NSM Issue Tracker" source="x_casus_nsm_issue">510636e76fea3200ad6cd4a21c3ee48c</sys_package>
         <sys_policy/>
@@ -195,7 +256,7 @@ function ConvertTimeFormat(str) {
         <sys_scope display_value="NSM Issue Tracker">510636e76fea3200ad6cd4a21c3ee48c</sys_scope>
         <sys_update_name>sys_ui_script_e8c397306f36b200ad6cd4a21c3ee40e</sys_update_name>
         <sys_updated_by>nicholasmyers</sys_updated_by>
-        <sys_updated_on>2017-06-02 17:44:05</sys_updated_on>
+        <sys_updated_on>2017-12-04 21:54:09</sys_updated_on>
         <use_scoped_format>false</use_scoped_format>
     </sys_ui_script>
 </record_update>

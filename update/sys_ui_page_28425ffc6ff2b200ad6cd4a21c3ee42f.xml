@@ -324,6 +324,55 @@ $( function() {
     background-color: #4da845 !important;
     border-color: #418c3a !important;
 }
+	
+.card {
+	position: relative;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	background-color: #fff;
+	border: 1px solid rgba(0,0,0,.125);
+	border-radius: .25rem;
+	margin-bottom: .5rem;
+	margin-left: .5rem;
+	margin-right: .5rem;
+	margin-top: .5rem;
+}
+		
+.card-block {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1 1 auto;
+	-ms-flex: 1 1 auto;
+	flex: 1 1 auto;
+	padding: 1.25rem;
+}
+
+.card-title {
+	margin-bottom: .75rem;
+}
+		
+.text-muted {
+	color: #636c72 !important;
+}
+	
+.mb-2 {
+	margin-bottom: .5rem !important;
+}
+.card-subtitle {
+	margin-top: -.375rem;
+	margin-bottom: 0;
+}
+
+p {
+	margin-top: 0;
+	margin-bottom: 1rem;
+}
 
 </style>
 	
@@ -355,8 +404,8 @@ $( function() {
 								</div>
 								<div class="form-group col-lg-9 col-lg-offset-1 col-md-4 col-sm-4 col-xs-12">
 									<label for="instrument_input">Instrument</label>
-									<select id="instrument_input" ng-model="data.instrument" class="form-control" 
-											ng-disabled="!data.issue_type" 
+									<select id="instrument_input" ng-model="data.instrument" ng-change="instrumentChanged(data.instrument)" class="form-control" 
+											ng-disabled="!data.issue_type"
 											ng-options="j.instrument_sys_id as j.instrument_name for j in ((issuesList | filter:{'issue_sys_id': data.issue_type})[0].instruments)
 														track by j.instrument_sys_id">
 										<option value=""></option>
@@ -401,6 +450,32 @@ $( function() {
 								</div>
 							</div>
 						</div>
+						<!--Display up to 5 current and previous issues with this instrument-->
+						<div class="ng-cloak" ng-hide="data.instrument=='' || data.instrument.length==0 || data.instrument == null"> <!--hide content if no instrument is selected-->
+							<div class="panel-heading" style="background-color: #de7713; color: white">
+								<h3 class="panel-title">Current and Previous Issues with this Instrument</h3>
+							</div>
+							<div class="issue-panel">
+								<div ng-if="issues.length == 0">
+									<div class="card">
+										<div class="card-block">
+											<h4 class="card-title" style="padding-left: 10px;">No current or previous issues reported.</h4>
+										</div>
+									</div>
+								</div>
+								<div ng-repeat="issue in issues track by $index">
+									<div class="card">
+										<!--Display an empty card if no previous issues exist-->
+										<div class="card-block" ng-if="issue != null">
+											<p><h4 class="card-title">{{issue.subject}}</h4>
+											<h6 class="card-subtitle mb-2">State: {{issue.state}}</h6></p>
+											<h6 class="card-subtitle mb-2 text-muted">Reported {{issue.date_time}} by {{issue.submitter}}</h6>
+											<a ng-href="/nav_to.do?uri=x_casus_nsm_issue_issue.do?sys_id={{issue.sys_id}}%26sysparm_view=User" target="_blank">View issue</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			<!-- End Repeat -->
@@ -408,7 +483,7 @@ $( function() {
 					<button class="btn-submit" ng-click="validate()"> Submit </button>
 				</div>
 				
-	</div><!-- END Supplies Received Controller-->
+	</div><!-- END Issue Controller-->
 	</div>
 </div>
 
@@ -418,16 +493,16 @@ $( function() {
         <sys_class_name>sys_ui_page</sys_class_name>
         <sys_created_by>gg622</sys_created_by>
         <sys_created_on>2017-05-15 22:11:25</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
+        <sys_customer_update>true</sys_customer_update>
         <sys_id>28425ffc6ff2b200ad6cd4a21c3ee42f</sys_id>
-        <sys_mod_count>109</sys_mod_count>
+        <sys_mod_count>151</sys_mod_count>
         <sys_name>Submit Issue</sys_name>
         <sys_package display_value="NSM Issue Tracker" source="x_casus_nsm_issue">510636e76fea3200ad6cd4a21c3ee48c</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="NSM Issue Tracker">510636e76fea3200ad6cd4a21c3ee48c</sys_scope>
         <sys_update_name>sys_ui_page_28425ffc6ff2b200ad6cd4a21c3ee42f</sys_update_name>
-        <sys_updated_by>gg622</sys_updated_by>
-        <sys_updated_on>2017-06-01 19:48:45</sys_updated_on>
+        <sys_updated_by>nicholasmyers</sys_updated_by>
+        <sys_updated_on>2017-12-04 22:11:27</sys_updated_on>
     </sys_ui_page>
 </record_update>

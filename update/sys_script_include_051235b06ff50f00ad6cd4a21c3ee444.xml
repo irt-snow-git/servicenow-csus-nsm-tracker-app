@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_casus_nsm_issue.NSMIssueUtils</api_name>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>NSMIssueUtils</name>
+        <script><![CDATA[var NSMIssueUtils = Class.create();
+NSMIssueUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	
+	//returns all instruments
+	getAllScheduledInstruments : function() {
+		// used by calendar initalization
+		var gr_instruments = new GlideRecord("x_casus_nsm_issue_instrument");
+		gr_instruments.addNotNullQuery('next_scheduled');
+		gr_instruments.query();
+		var list = [];
+		
+		while( gr_instruments.next() ) {
+			var maintDate = new GlideDateTime(gr_instruments.next_scheduled);
+
+			list.push( {
+				id: gr_instruments.sys_id+'', 
+				instrument: gr_instruments.instrument_id+'', 
+			    maint_date: maintDate.getNumericValue()
+			} );
+		}
+		return new global.JSON().encodeArray(list);
+	},
+	
+    type: 'NSMIssueUtils'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>nicholasmyers</sys_created_by>
+        <sys_created_on>2017-10-11 18:21:42</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>051235b06ff50f00ad6cd4a21c3ee444</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>NSMIssueUtils</sys_name>
+        <sys_package display_value="NSM Issue Tracker" source="x_casus_nsm_issue">510636e76fea3200ad6cd4a21c3ee48c</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="NSM Issue Tracker">510636e76fea3200ad6cd4a21c3ee48c</sys_scope>
+        <sys_update_name>sys_script_include_051235b06ff50f00ad6cd4a21c3ee444</sys_update_name>
+        <sys_updated_by>nicholasmyers</sys_updated_by>
+        <sys_updated_on>2017-11-14 22:30:30</sys_updated_on>
+    </sys_script_include>
+</record_update>
