@@ -105,20 +105,19 @@ myApp.controller('MainSchedulerCtrl', function($scope , $interval) {
 	$scope.events = [ ];
 	
 	$scope.init = function ( ) {
-		var ga = new GlideAjax('NSMIssueUtils');
-		ga.addParam('sysparm_name' , 'getAllScheduledInstruments');
-		ga.setScope('x_casus_nsm_issue');
-		ga.getXML(function(response) {
+		var futureService = new GlideAjax('NSMIssueUtils');
+		futureService.addParam('sysparm_name' , 'getAllScheduledInstruments');
+		futureService.setScope('x_casus_nsm_issue');
+		futureService.getXML(function(response) {
 			var answer = response.responseXML.documentElement.getAttribute('answer');
 			$scope.$apply(function () {
 				$scope.events = angular.fromJson(answer);
-				console.log($scope.events);
 			});
 		});
 	};
 	$interval(function(){
 		$scope.init();
-	},60000);
+	},120000);
 	
 });
 
@@ -133,7 +132,7 @@ myApp.controller('MainSchedulerCtrl', function($scope , $interval) {
         <sys_created_on>2017-10-11 17:32:52</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>ec67e5bc6fb50f00ad6cd4a21c3ee470</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>20</sys_mod_count>
         <sys_name>x_casus_nsm_issue.app_angular_calendar</sys_name>
         <sys_package display_value="NSM Issue Tracker" source="x_casus_nsm_issue">510636e76fea3200ad6cd4a21c3ee48c</sys_package>
         <sys_policy/>
@@ -141,7 +140,7 @@ myApp.controller('MainSchedulerCtrl', function($scope , $interval) {
         <sys_scope display_value="NSM Issue Tracker">510636e76fea3200ad6cd4a21c3ee48c</sys_scope>
         <sys_update_name>sys_ui_script_ec67e5bc6fb50f00ad6cd4a21c3ee470</sys_update_name>
         <sys_updated_by>nicholasmyers</sys_updated_by>
-        <sys_updated_on>2018-01-16 18:28:03</sys_updated_on>
+        <sys_updated_on>2018-01-16 21:30:52</sys_updated_on>
         <use_scoped_format>false</use_scoped_format>
     </sys_ui_script>
 </record_update>

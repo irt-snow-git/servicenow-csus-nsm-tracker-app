@@ -13,17 +13,37 @@ NSMIssueUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 	//returns all instruments
 	getAllScheduledInstruments : function() {
 		// used by calendar initalization
-		var gr_instruments = new GlideRecord("x_casus_nsm_issue_instrument");
-		gr_instruments.addNotNullQuery('next_scheduled');
-		gr_instruments.addEncodedQuery('next_scheduled>=javascript:gs.daysAgoEnd(0)');
-		gr_instruments.query();
+		//now push those which were already performed.
 		var list = [];
 		
+		var servicedInstruments = new GlideRecord("x_casus_nsm_issue_instrument");
+		servicedInstruments.addNotNullQuery('last_performed');
+		servicedInstruments.addEncodedQuery('last_performed<=javascript:gs.beginningOfLastMonth()');
+		servicedInstruments.query();
+		
+		while(servicedInstruments.next() ) {
+			//standard start date is just the date/time that the maintenance is scheduled
+			var prevMaintDate = new GlideDateTime(servicedInstruments.last_performed);	
+
+			list.push( {
+				id: servicedInstruments.sys_id+'svcd', 
+				instrument: servicedInstruments.instrument_id+'', 
+				start_date: prevMaintDate.getNumericValue(),
+				end_date: prevMaintDate.getNumericValue(),
+				textColor: "black"
+ 			} );
+		}
+		
+		
+		var gr_instruments = new GlideRecord("x_casus_nsm_issue_instrument");
+		gr_instruments.addNotNullQuery('next_scheduled');
+		gr_instruments.addEncodedQuery('next_scheduled>=javascript:gs.endOfLastMonth()');
+		gr_instruments.query();
+	
+		
 		while( gr_instruments.next() ) {
-			//standard start and end dates are just the date/time that the maintenance is scheduled
-			var maintDate = new GlideDateTime(gr_instruments.next_scheduled);
-			var endMaintDate = new GlideDateTime(maintDate);
-			
+			//standard start date is just the date/time that the maintenance is scheduled
+			var maintDate = new GlideDateTime(gr_instruments.next_scheduled);	
 			
 			//Client functionality requires that the whole week be blocked out for the instrument
 			//to allow end users to see that the instrument will be scheduled for maintenance (floating) some time that week
@@ -42,12 +62,11 @@ NSMIssueUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 			list.push( {
 				id: gr_instruments.sys_id+'', 
 				instrument: gr_instruments.instrument_id+'', 
-			    //start_date: maintDate.getNumericValue(),
-				//end_date: endMaintDate.getNumericValue()
 				start_date: begOfWeek.getNumericValue(),
 				end_date: endOfWeek.getNumericValue()
-			} );
+ 			} );
 		}
+		
 		return new global.JSON().encodeArray(list);
 	},
 	
@@ -58,7 +77,7 @@ NSMIssueUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
         <sys_created_on>2017-10-11 18:21:42</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>051235b06ff50f00ad6cd4a21c3ee444</sys_id>
-        <sys_mod_count>33</sys_mod_count>
+        <sys_mod_count>59</sys_mod_count>
         <sys_name>NSMIssueUtils</sys_name>
         <sys_package display_value="NSM Issue Tracker" source="x_casus_nsm_issue">510636e76fea3200ad6cd4a21c3ee48c</sys_package>
         <sys_policy>read</sys_policy>
@@ -66,6 +85,6 @@ NSMIssueUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
         <sys_scope display_value="NSM Issue Tracker">510636e76fea3200ad6cd4a21c3ee48c</sys_scope>
         <sys_update_name>sys_script_include_051235b06ff50f00ad6cd4a21c3ee444</sys_update_name>
         <sys_updated_by>nicholasmyers</sys_updated_by>
-        <sys_updated_on>2018-01-16 20:20:13</sys_updated_on>
+        <sys_updated_on>2018-01-16 21:32:13</sys_updated_on>
     </sys_script_include>
 </record_update>
