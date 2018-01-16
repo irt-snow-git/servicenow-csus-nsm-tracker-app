@@ -17,7 +17,7 @@
         <name/>
         <order>275</order>
         <override_menu_roles>false</override_menu_roles>
-        <query>x_casus_nsm_issue_maintainence_calendar.do</query>
+        <query>x_casus_nsm_issue_maintenance_calendar.do</query>
         <report/>
         <roles>x_casus_nsm_issue.chem_user</roles>
         <survey/>
@@ -28,7 +28,7 @@
         <sys_customer_update>true</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>91082dbc6fb50f00ad6cd4a21c3ee486</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>View Maintenance Calendar</sys_name>
         <sys_overrides/>
         <sys_package display_value="NSM Issue Tracker" source="x_casus_nsm_issue">510636e76fea3200ad6cd4a21c3ee48c</sys_package>
@@ -37,7 +37,7 @@
         <sys_scope display_value="NSM Issue Tracker">510636e76fea3200ad6cd4a21c3ee48c</sys_scope>
         <sys_update_name>sys_app_module_91082dbc6fb50f00ad6cd4a21c3ee486</sys_update_name>
         <sys_updated_by>nicholasmyers</sys_updated_by>
-        <sys_updated_on>2017-10-11 17:53:22</sys_updated_on>
+        <sys_updated_on>2018-01-16 17:40:46</sys_updated_on>
         <timeline_page/>
         <title>View Maintenance Calendar</title>
         <u_basic_module/>

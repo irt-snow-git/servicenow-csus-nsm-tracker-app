@@ -20,7 +20,7 @@ function show_minical(){
 }]]></client_script>
         <description/>
         <direct>false</direct>
-        <endpoint>x_casus_nsm_issue_maintainence_calendar.do</endpoint>
+        <endpoint>x_casus_nsm_issue_maintenance_calendar.do</endpoint>
         <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
 <j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
 	<base href="/" />
@@ -73,21 +73,21 @@ function show_minical(){
 	</div>
 </j:if>
 </j:jelly>]]></html>
-        <name>maintainence_calendar</name>
+        <name>maintenance_calendar</name>
         <processing_script/>
         <sys_class_name>sys_ui_page</sys_class_name>
         <sys_created_by>nicholasmyers</sys_created_by>
         <sys_created_on>2017-10-11 17:27:28</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>5fe4697c6fb50f00ad6cd4a21c3ee4c3</sys_id>
-        <sys_mod_count>13</sys_mod_count>
-        <sys_name>maintainence_calendar</sys_name>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_name>maintenance_calendar</sys_name>
         <sys_package display_value="NSM Issue Tracker" source="x_casus_nsm_issue">510636e76fea3200ad6cd4a21c3ee48c</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="NSM Issue Tracker">510636e76fea3200ad6cd4a21c3ee48c</sys_scope>
         <sys_update_name>sys_ui_page_5fe4697c6fb50f00ad6cd4a21c3ee4c3</sys_update_name>
         <sys_updated_by>nicholasmyers</sys_updated_by>
-        <sys_updated_on>2017-11-14 22:50:59</sys_updated_on>
+        <sys_updated_on>2018-01-16 20:22:05</sys_updated_on>
     </sys_ui_page>
 </record_update>

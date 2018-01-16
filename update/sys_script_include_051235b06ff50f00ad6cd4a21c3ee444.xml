@@ -15,16 +15,37 @@ NSMIssueUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 		// used by calendar initalization
 		var gr_instruments = new GlideRecord("x_casus_nsm_issue_instrument");
 		gr_instruments.addNotNullQuery('next_scheduled');
+		gr_instruments.addEncodedQuery('next_scheduled>=javascript:gs.daysAgoEnd(0)');
 		gr_instruments.query();
 		var list = [];
 		
 		while( gr_instruments.next() ) {
+			//standard start and end dates are just the date/time that the maintenance is scheduled
 			var maintDate = new GlideDateTime(gr_instruments.next_scheduled);
+			var endMaintDate = new GlideDateTime(maintDate);
+			
+			
+			//Client functionality requires that the whole week be blocked out for the instrument
+			//to allow end users to see that the instrument will be scheduled for maintenance (floating) some time that week
+			var begOfWeek = new GlideDateTime(maintDate);
+			begOfWeek.addDaysLocalTime(-1 * begOfWeek.getDayOfWeekLocalTime());
+			
+			
+			var endOfWeek = new GlideDateTime(maintDate);
+			endOfWeek.addDaysLocalTime(7 - endOfWeek.getDayOfWeekLocalTime() - 2);
+			
+			var gTime = new GlideTime();
+			gTime.setValue("23:59:59");
+			endOfWeek.add(gTime);
+			
 
 			list.push( {
 				id: gr_instruments.sys_id+'', 
 				instrument: gr_instruments.instrument_id+'', 
-			    maint_date: maintDate.getNumericValue()
+			    //start_date: maintDate.getNumericValue(),
+				//end_date: endMaintDate.getNumericValue()
+				start_date: begOfWeek.getNumericValue(),
+				end_date: endOfWeek.getNumericValue()
 			} );
 		}
 		return new global.JSON().encodeArray(list);
@@ -37,7 +58,7 @@ NSMIssueUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
         <sys_created_on>2017-10-11 18:21:42</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>051235b06ff50f00ad6cd4a21c3ee444</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>33</sys_mod_count>
         <sys_name>NSMIssueUtils</sys_name>
         <sys_package display_value="NSM Issue Tracker" source="x_casus_nsm_issue">510636e76fea3200ad6cd4a21c3ee48c</sys_package>
         <sys_policy>read</sys_policy>
@@ -45,6 +66,6 @@ NSMIssueUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
         <sys_scope display_value="NSM Issue Tracker">510636e76fea3200ad6cd4a21c3ee48c</sys_scope>
         <sys_update_name>sys_script_include_051235b06ff50f00ad6cd4a21c3ee444</sys_update_name>
         <sys_updated_by>nicholasmyers</sys_updated_by>
-        <sys_updated_on>2017-11-14 22:30:30</sys_updated_on>
+        <sys_updated_on>2018-01-16 20:20:13</sys_updated_on>
     </sys_script_include>
 </record_update>

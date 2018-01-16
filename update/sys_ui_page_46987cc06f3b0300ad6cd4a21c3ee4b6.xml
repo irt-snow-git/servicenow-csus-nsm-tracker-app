@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script/>
+        <description>A tool for NSM Issue Tracker users (nsm staff/fac) to enter an instrument and search for issues related to that instrument.</description>
+        <direct>false</direct>
+        <endpoint>x_casus_nsm_issue_search.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+
+</j:jelly>]]></html>
+        <name>search</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>nicholasmyers</sys_created_by>
+        <sys_created_on>2018-01-16 16:17:34</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>46987cc06f3b0300ad6cd4a21c3ee4b6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>search</sys_name>
+        <sys_package display_value="NSM Issue Tracker" source="x_casus_nsm_issue">510636e76fea3200ad6cd4a21c3ee48c</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="NSM Issue Tracker">510636e76fea3200ad6cd4a21c3ee48c</sys_scope>
+        <sys_update_name>sys_ui_page_46987cc06f3b0300ad6cd4a21c3ee4b6</sys_update_name>
+        <sys_updated_by>nicholasmyers</sys_updated_by>
+        <sys_updated_on>2018-01-16 16:17:34</sys_updated_on>
+    </sys_ui_page>
+</record_update>
