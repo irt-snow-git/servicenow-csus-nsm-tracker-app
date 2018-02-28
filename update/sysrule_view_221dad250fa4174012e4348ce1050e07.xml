@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sysrule_view">
+    <sysrule_view action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <advanced>true</advanced>
+        <condition/>
+        <description/>
+        <device_type>browser</device_type>
+        <match_conditions>ALL</match_conditions>
+        <name>Instruments</name>
+        <order>100</order>
+        <overrides_user_preference>true</overrides_user_preference>
+        <script><![CDATA[(function overrideView(view, is_list) {
+
+	// Add your code here
+	var user = gs.getUser();
+	if(user) {
+		if(user.hasRole('x_casus_nsm.chem_manager')) {
+			answer = 'default';
+			gs.addInfoMessage("manager");
+		} else if(user.hasRole('x_casus_nsm.chem_user')) {
+			answer = 'User';
+			gs.addInfoMessage("user!");
+		}
+	} else {
+		answer = 'User';
+		gs.addInfoMessage("default - user");
+	}
+			
+})(view, is_list);]]></script>
+        <sys_class_name>sysrule_view</sys_class_name>
+        <sys_created_by>nicholasmyers</sys_created_by>
+        <sys_created_on>2018-02-27 18:47:30</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>221dad250fa4174012e4348ce1050e07</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Instruments</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NSM Issue Tracker" source="x_casus_nsm_issue">510636e76fea3200ad6cd4a21c3ee48c</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="NSM Issue Tracker">510636e76fea3200ad6cd4a21c3ee48c</sys_scope>
+        <sys_update_name>sysrule_view_221dad250fa4174012e4348ce1050e07</sys_update_name>
+        <sys_updated_by>nicholasmyers</sys_updated_by>
+        <sys_updated_on>2018-02-27 19:10:07</sys_updated_on>
+        <table>x_casus_nsm_issue_instrument</table>
+        <view>user</view>
+    </sysrule_view>
+</record_update>

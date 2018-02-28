@@ -10,7 +10,7 @@
             <sys_mod_count>0</sys_mod_count>
             <sys_overrides/>
             <sys_ui_form display_value="x_casus_nsm_issue_instrument" name="x_casus_nsm_issue_instrument" sys_domain="global" view="Default view">58651b266f6fbe00ad6cd4a21c3ee476</sys_ui_form>
-            <sys_ui_section caption="NULL" display_value="" name="x_casus_nsm_issue_instrument" sys_domain="global" view="Default view">7b31de746fb2b200ad6cd4a21c3ee471</sys_ui_section>
+            <sys_ui_section caption="General Instrument Information" display_value="General Instrument Information" name="x_casus_nsm_issue_instrument" sys_domain="global" view="Default view">7b31de746fb2b200ad6cd4a21c3ee471</sys_ui_section>
             <sys_updated_by>coletonbuehler</sys_updated_by>
             <sys_updated_on>2017-06-27 15:39:32</sys_updated_on>
         </sys_ui_form_section>
@@ -23,9 +23,22 @@
             <sys_mod_count>0</sys_mod_count>
             <sys_overrides/>
             <sys_ui_form display_value="x_casus_nsm_issue_instrument" name="x_casus_nsm_issue_instrument" sys_domain="global" view="Default view">58651b266f6fbe00ad6cd4a21c3ee476</sys_ui_form>
-            <sys_ui_section caption="Preventative Maintenance" display_value="Preventative Maintenance" name="x_casus_nsm_issue_instrument" sys_domain="global" view="Default view">d0651b266f6fbe00ad6cd4a21c3ee476</sys_ui_section>
+            <sys_ui_section caption="Instrument Maintenance Information" display_value="Instrument Maintenance Information" name="x_casus_nsm_issue_instrument" sys_domain="global" view="Default view">d0651b266f6fbe00ad6cd4a21c3ee476</sys_ui_section>
             <sys_updated_by>coletonbuehler</sys_updated_by>
             <sys_updated_on>2017-06-27 15:39:32</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>nicholasmyers</sys_created_by>
+            <sys_created_on>2018-02-12 17:30:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>1d6c44740f145f0012e4348ce1050e0c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_casus_nsm_issue_instrument" name="x_casus_nsm_issue_instrument" sys_domain="global" view="Default view">58651b266f6fbe00ad6cd4a21c3ee476</sys_ui_form>
+            <sys_ui_section caption="Department Record Keeper Information" display_value="Department Record Keeper Information" name="x_casus_nsm_issue_instrument" sys_domain="global" view="Default view">d56c44740f145f0012e4348ce1050e0c</sys_ui_section>
+            <sys_updated_by>nicholasmyers</sys_updated_by>
+            <sys_updated_on>2018-02-12 17:30:18</sys_updated_on>
         </sys_ui_form_section>
         <sys_ui_form action="INSERT_OR_UPDATE">
             <name>x_casus_nsm_issue_instrument</name>
@@ -36,7 +49,7 @@
             <sys_customer_update>false</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_id>58651b266f6fbe00ad6cd4a21c3ee476</sys_id>
-            <sys_mod_count>4</sys_mod_count>
+            <sys_mod_count>6</sys_mod_count>
             <sys_name>x_casus_nsm_issue_instrument</sys_name>
             <sys_overrides/>
             <sys_package display_value="NSM Issue Tracker" source="x_casus_nsm_issue">510636e76fea3200ad6cd4a21c3ee48c</sys_package>
@@ -44,8 +57,8 @@
             <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
             <sys_scope display_value="NSM Issue Tracker">510636e76fea3200ad6cd4a21c3ee48c</sys_scope>
             <sys_update_name>sys_ui_form_sections_58651b266f6fbe00ad6cd4a21c3ee476</sys_update_name>
-            <sys_updated_by>stephen.disher</sys_updated_by>
-            <sys_updated_on>2017-10-10 21:19:15</sys_updated_on>
+            <sys_updated_by>nicholasmyers</sys_updated_by>
+            <sys_updated_on>2018-02-12 17:30:18</sys_updated_on>
             <sys_user/>
             <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>

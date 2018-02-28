@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_section caption="Instrument Maintenance Information" section_id="233dc4740f145f0012e4348ce1050ed6" sys_domain="global" table="x_casus_nsm_issue_instrument" version="3" view="User">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>0</position>
+            <sys_created_by>nicholasmyers</sys_created_by>
+            <sys_created_on>2018-02-12 17:35:34</sys_created_on>
+            <sys_id>fa9d08340f145f0012e4348ce1050e9d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Instrument Maintenance Information" display_value="Instrument Maintenance Information" name="x_casus_nsm_issue_instrument" sys_domain="global" view="df4788446fb27200ad6cd4a21c3ee412">233dc4740f145f0012e4348ce1050ed6</sys_ui_section>
+            <sys_updated_by>nicholasmyers</sys_updated_by>
+            <sys_updated_on>2018-02-12 17:35:34</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>last_performed</element>
+            <position>1</position>
+            <sys_created_by>nicholasmyers</sys_created_by>
+            <sys_created_on>2018-02-12 17:35:34</sys_created_on>
+            <sys_id>7e9d08340f145f0012e4348ce1050e9d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Instrument Maintenance Information" display_value="Instrument Maintenance Information" name="x_casus_nsm_issue_instrument" sys_domain="global" view="df4788446fb27200ad6cd4a21c3ee412">233dc4740f145f0012e4348ce1050ed6</sys_ui_section>
+            <sys_updated_by>nicholasmyers</sys_updated_by>
+            <sys_updated_on>2018-02-12 17:35:34</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>next_scheduled</element>
+            <position>2</position>
+            <sys_created_by>nicholasmyers</sys_created_by>
+            <sys_created_on>2018-02-12 17:35:34</sys_created_on>
+            <sys_id>fe9d08340f145f0012e4348ce1050e9d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Instrument Maintenance Information" display_value="Instrument Maintenance Information" name="x_casus_nsm_issue_instrument" sys_domain="global" view="df4788446fb27200ad6cd4a21c3ee412">233dc4740f145f0012e4348ce1050ed6</sys_ui_section>
+            <sys_updated_by>nicholasmyers</sys_updated_by>
+            <sys_updated_on>2018-02-12 17:35:34</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>3</position>
+            <sys_created_by>nicholasmyers</sys_created_by>
+            <sys_created_on>2018-02-12 17:35:34</sys_created_on>
+            <sys_id>729d08340f145f0012e4348ce1050e9e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Instrument Maintenance Information" display_value="Instrument Maintenance Information" name="x_casus_nsm_issue_instrument" sys_domain="global" view="df4788446fb27200ad6cd4a21c3ee412">233dc4740f145f0012e4348ce1050ed6</sys_ui_section>
+            <sys_updated_by>nicholasmyers</sys_updated_by>
+            <sys_updated_on>2018-02-12 17:35:34</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_glide_date_1</element>
+            <position>4</position>
+            <sys_created_by>nicholasmyers</sys_created_by>
+            <sys_created_on>2018-02-12 17:35:34</sys_created_on>
+            <sys_id>f29d08340f145f0012e4348ce1050e9e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Instrument Maintenance Information" display_value="Instrument Maintenance Information" name="x_casus_nsm_issue_instrument" sys_domain="global" view="df4788446fb27200ad6cd4a21c3ee412">233dc4740f145f0012e4348ce1050ed6</sys_ui_section>
+            <sys_updated_by>nicholasmyers</sys_updated_by>
+            <sys_updated_on>2018-02-12 17:35:34</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>contact_name</element>
+            <position>5</position>
+            <sys_created_by>nicholasmyers</sys_created_by>
+            <sys_created_on>2018-02-12 17:35:34</sys_created_on>
+            <sys_id>769d08340f145f0012e4348ce1050e9e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Instrument Maintenance Information" display_value="Instrument Maintenance Information" name="x_casus_nsm_issue_instrument" sys_domain="global" view="df4788446fb27200ad6cd4a21c3ee412">233dc4740f145f0012e4348ce1050ed6</sys_ui_section>
+            <sys_updated_by>nicholasmyers</sys_updated_by>
+            <sys_updated_on>2018-02-12 17:35:34</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>phone_number</element>
+            <position>6</position>
+            <sys_created_by>nicholasmyers</sys_created_by>
+            <sys_created_on>2018-02-12 17:35:34</sys_created_on>
+            <sys_id>f69d08340f145f0012e4348ce1050e9e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Instrument Maintenance Information" display_value="Instrument Maintenance Information" name="x_casus_nsm_issue_instrument" sys_domain="global" view="df4788446fb27200ad6cd4a21c3ee412">233dc4740f145f0012e4348ce1050ed6</sys_ui_section>
+            <sys_updated_by>nicholasmyers</sys_updated_by>
+            <sys_updated_on>2018-02-12 17:35:34</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>7</position>
+            <sys_created_by>nicholasmyers</sys_created_by>
+            <sys_created_on>2018-02-12 17:35:34</sys_created_on>
+            <sys_id>7a9d08340f145f0012e4348ce1050e9e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Instrument Maintenance Information" display_value="Instrument Maintenance Information" name="x_casus_nsm_issue_instrument" sys_domain="global" view="df4788446fb27200ad6cd4a21c3ee412">233dc4740f145f0012e4348ce1050ed6</sys_ui_section>
+            <sys_updated_by>nicholasmyers</sys_updated_by>
+            <sys_updated_on>2018-02-12 17:35:34</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Instrument Maintenance Information</caption>
+            <header>false</header>
+            <name>x_casus_nsm_issue_instrument</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>nicholasmyers</sys_created_by>
+            <sys_created_on>2018-02-12 17:33:59</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_id>233dc4740f145f0012e4348ce1050ed6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Instrument Maintenance Information</sys_name>
+            <sys_overrides display_value="">global</sys_overrides>
+            <sys_package display_value="NSM Issue Tracker" source="x_casus_nsm_issue">510636e76fea3200ad6cd4a21c3ee48c</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="NSM Issue Tracker">510636e76fea3200ad6cd4a21c3ee48c</sys_scope>
+            <sys_update_name>sys_ui_section_233dc4740f145f0012e4348ce1050ed6</sys_update_name>
+            <sys_updated_by>nicholasmyers</sys_updated_by>
+            <sys_updated_on>2018-02-12 17:33:59</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="User" name="User">df4788446fb27200ad6cd4a21c3ee412</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update>
-    <sys_ui_section caption="" section_id="7b31de746fb2b200ad6cd4a21c3ee471" sys_domain="global" table="x_casus_nsm_issue_instrument" version="3" view="">
+    <sys_ui_section caption="General Instrument Information" section_id="7b31de746fb2b200ad6cd4a21c3ee471" sys_domain="global" table="x_casus_nsm_issue_instrument" version="3" view="">
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>instrument_id</element>
             <position>0</position>
             <sys_created_by>nicholasmyers</sys_created_by>
-            <sys_created_on>2017-07-20 16:54:25</sys_created_on>
-            <sys_id>59134e066fc04b40ad6cd4a21c3ee4bc</sys_id>
+            <sys_created_on>2018-02-28 22:43:22</sys_created_on>
+            <sys_id>a37d2f710f20574012e4348ce1050e14</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_casus_nsm_issue_instrument" sys_domain="global" view="Default view">7b31de746fb2b200ad6cd4a21c3ee471</sys_ui_section>
+            <sys_ui_section caption="General Instrument Information" display_value="General Instrument Information" name="x_casus_nsm_issue_instrument" sys_domain="global" view="Default view">7b31de746fb2b200ad6cd4a21c3ee471</sys_ui_section>
             <sys_updated_by>nicholasmyers</sys_updated_by>
-            <sys_updated_on>2017-07-20 16:54:25</sys_updated_on>
+            <sys_updated_on>2018-02-28 22:43:22</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -19,13 +19,13 @@
             <element>model</element>
             <position>1</position>
             <sys_created_by>nicholasmyers</sys_created_by>
-            <sys_created_on>2017-07-20 16:54:25</sys_created_on>
-            <sys_id>d9134e066fc04b40ad6cd4a21c3ee4bc</sys_id>
+            <sys_created_on>2018-02-28 22:43:22</sys_created_on>
+            <sys_id>277d2f710f20574012e4348ce1050e14</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_casus_nsm_issue_instrument" sys_domain="global" view="Default view">7b31de746fb2b200ad6cd4a21c3ee471</sys_ui_section>
+            <sys_ui_section caption="General Instrument Information" display_value="General Instrument Information" name="x_casus_nsm_issue_instrument" sys_domain="global" view="Default view">7b31de746fb2b200ad6cd4a21c3ee471</sys_ui_section>
             <sys_updated_by>nicholasmyers</sys_updated_by>
-            <sys_updated_on>2017-07-20 16:54:25</sys_updated_on>
+            <sys_updated_on>2018-02-28 22:43:22</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -33,41 +33,41 @@
             <element>.split</element>
             <position>2</position>
             <sys_created_by>nicholasmyers</sys_created_by>
-            <sys_created_on>2017-07-20 16:54:25</sys_created_on>
-            <sys_id>5d134e066fc04b40ad6cd4a21c3ee4bc</sys_id>
+            <sys_created_on>2018-02-28 22:43:22</sys_created_on>
+            <sys_id>a77d2f710f20574012e4348ce1050e14</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_casus_nsm_issue_instrument" sys_domain="global" view="Default view">7b31de746fb2b200ad6cd4a21c3ee471</sys_ui_section>
+            <sys_ui_section caption="General Instrument Information" display_value="General Instrument Information" name="x_casus_nsm_issue_instrument" sys_domain="global" view="Default view">7b31de746fb2b200ad6cd4a21c3ee471</sys_ui_section>
             <sys_updated_by>nicholasmyers</sys_updated_by>
-            <sys_updated_on>2017-07-20 16:54:25</sys_updated_on>
+            <sys_updated_on>2018-02-28 22:43:22</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>serial_number</element>
+            <element>room</element>
             <position>3</position>
             <sys_created_by>nicholasmyers</sys_created_by>
-            <sys_created_on>2017-07-20 16:54:25</sys_created_on>
-            <sys_id>dd134e066fc04b40ad6cd4a21c3ee4bc</sys_id>
+            <sys_created_on>2018-02-28 22:43:22</sys_created_on>
+            <sys_id>2b7d2f710f20574012e4348ce1050e14</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_casus_nsm_issue_instrument" sys_domain="global" view="Default view">7b31de746fb2b200ad6cd4a21c3ee471</sys_ui_section>
+            <sys_ui_section caption="General Instrument Information" display_value="General Instrument Information" name="x_casus_nsm_issue_instrument" sys_domain="global" view="Default view">7b31de746fb2b200ad6cd4a21c3ee471</sys_ui_section>
             <sys_updated_by>nicholasmyers</sys_updated_by>
-            <sys_updated_on>2017-07-20 16:54:25</sys_updated_on>
+            <sys_updated_on>2018-02-28 22:43:22</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>room</element>
+            <element>knowledge_links</element>
             <position>4</position>
             <sys_created_by>nicholasmyers</sys_created_by>
-            <sys_created_on>2017-07-20 16:54:25</sys_created_on>
-            <sys_id>51134e066fc04b40ad6cd4a21c3ee4bd</sys_id>
+            <sys_created_on>2018-02-28 22:43:22</sys_created_on>
+            <sys_id>ab7d2f710f20574012e4348ce1050e14</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_casus_nsm_issue_instrument" sys_domain="global" view="Default view">7b31de746fb2b200ad6cd4a21c3ee471</sys_ui_section>
+            <sys_ui_section caption="General Instrument Information" display_value="General Instrument Information" name="x_casus_nsm_issue_instrument" sys_domain="global" view="Default view">7b31de746fb2b200ad6cd4a21c3ee471</sys_ui_section>
             <sys_updated_by>nicholasmyers</sys_updated_by>
-            <sys_updated_on>2017-07-20 16:54:25</sys_updated_on>
+            <sys_updated_on>2018-02-28 22:43:22</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -75,13 +75,13 @@
             <element>.end_split</element>
             <position>5</position>
             <sys_created_by>nicholasmyers</sys_created_by>
-            <sys_created_on>2017-07-20 16:54:25</sys_created_on>
-            <sys_id>d1134e066fc04b40ad6cd4a21c3ee4bd</sys_id>
+            <sys_created_on>2018-02-28 22:43:22</sys_created_on>
+            <sys_id>2f7d2f710f20574012e4348ce1050e14</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_casus_nsm_issue_instrument" sys_domain="global" view="Default view">7b31de746fb2b200ad6cd4a21c3ee471</sys_ui_section>
+            <sys_ui_section caption="General Instrument Information" display_value="General Instrument Information" name="x_casus_nsm_issue_instrument" sys_domain="global" view="Default view">7b31de746fb2b200ad6cd4a21c3ee471</sys_ui_section>
             <sys_updated_by>nicholasmyers</sys_updated_by>
-            <sys_updated_on>2017-07-20 16:54:25</sys_updated_on>
+            <sys_updated_on>2018-02-28 22:43:22</sys_updated_on>
             <sys_user/>
             <type>.end_split</type>
         </sys_ui_element>
@@ -89,29 +89,29 @@
             <element>user_manual</element>
             <position>6</position>
             <sys_created_by>nicholasmyers</sys_created_by>
-            <sys_created_on>2017-07-20 16:54:25</sys_created_on>
-            <sys_id>55134e066fc04b40ad6cd4a21c3ee4bd</sys_id>
+            <sys_created_on>2018-02-28 22:43:22</sys_created_on>
+            <sys_id>af7d2f710f20574012e4348ce1050e14</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_casus_nsm_issue_instrument" sys_domain="global" view="Default view">7b31de746fb2b200ad6cd4a21c3ee471</sys_ui_section>
+            <sys_ui_section caption="General Instrument Information" display_value="General Instrument Information" name="x_casus_nsm_issue_instrument" sys_domain="global" view="Default view">7b31de746fb2b200ad6cd4a21c3ee471</sys_ui_section>
             <sys_updated_by>nicholasmyers</sys_updated_by>
-            <sys_updated_on>2017-07-20 16:54:25</sys_updated_on>
+            <sys_updated_on>2018-02-28 22:43:22</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
-            <caption/>
+            <caption>General Instrument Information</caption>
             <header>false</header>
             <name>x_casus_nsm_issue_instrument</name>
             <roles/>
             <sys_class_name>sys_ui_section</sys_class_name>
             <sys_created_by>longlim</sys_created_by>
             <sys_created_on>2017-05-15 17:25:24</sys_created_on>
-            <sys_customer_update>false</sys_customer_update>
+            <sys_customer_update>true</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_id>7b31de746fb2b200ad6cd4a21c3ee471</sys_id>
-            <sys_mod_count>11</sys_mod_count>
-            <sys_name>x_casus_nsm_issue_instrument</sys_name>
+            <sys_mod_count>14</sys_mod_count>
+            <sys_name>General Instrument Information</sys_name>
             <sys_overrides display_value="">global</sys_overrides>
             <sys_package display_value="NSM Issue Tracker" source="x_casus_nsm_issue">510636e76fea3200ad6cd4a21c3ee48c</sys_package>
             <sys_policy/>
@@ -119,7 +119,7 @@
             <sys_scope display_value="NSM Issue Tracker">510636e76fea3200ad6cd4a21c3ee48c</sys_scope>
             <sys_update_name>sys_ui_section_7b31de746fb2b200ad6cd4a21c3ee471</sys_update_name>
             <sys_updated_by>nicholasmyers</sys_updated_by>
-            <sys_updated_on>2017-07-20 16:54:25</sys_updated_on>
+            <sys_updated_on>2018-02-12 17:28:21</sys_updated_on>
             <sys_user/>
             <title>true</title>
             <view display_value="Default view" name="NULL">Default view</view>

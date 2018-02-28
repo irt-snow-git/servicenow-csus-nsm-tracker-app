@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="software_license" label="Software License" language="en" table="x_casus_nsm_issue_instrument">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>software_license</element>
+            <help/>
+            <hint/>
+            <label>Software License</label>
+            <language>en</language>
+            <name>x_casus_nsm_issue_instrument</name>
+            <plural>Software Licenses</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>nicholasmyers</sys_created_by>
+            <sys_created_on>2018-02-28 22:43:06</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>af6d2f710f20574012e4348ce1050e0f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Software License</sys_name>
+            <sys_package display_value="NSM Issue Tracker" source="x_casus_nsm_issue">510636e76fea3200ad6cd4a21c3ee48c</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="NSM Issue Tracker">510636e76fea3200ad6cd4a21c3ee48c</sys_scope>
+            <sys_update_name>sys_documentation_x_casus_nsm_issue_instrument_software_license_en</sys_update_name>
+            <sys_updated_by>nicholasmyers</sys_updated_by>
+            <sys_updated_on>2018-02-28 22:43:06</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

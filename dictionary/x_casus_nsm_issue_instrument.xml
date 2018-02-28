@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
     <element label="Instrument" max_length="40" name="x_casus_nsm_issue_instrument" type="collection">
+        <element label="Computer Service Tag" max_length="32" name="computer" type="string"/>
         <element label="Vendor Contact Name" max_length="40" name="contact_name" type="string"/>
+        <element label="Sac State ID" max_length="40" name="identifier" type="string"/>
         <element display="true" label="Instrument ID" mandatory="true" max_length="40" name="instrument_id" type="string" unique="true"/>
+        <element label="Knowledge Base Links" max_length="2000" name="knowledge_links" type="string"/>
         <element label="Last Performed" max_length="40" name="last_performed" type="glide_date_time"/>
         <element label="Model" max_length="40" name="model" type="string"/>
         <element label="Next Scheduled" max_length="40" name="next_scheduled" type="glide_date_time"/>
@@ -10,15 +13,26 @@
         <element hint="Phone number for vendor." label="Phone Number" max_length="40" name="phone_number" type="string"/>
         <element label="Room" max_length="32" name="room" type="string"/>
         <element label="Serial Number" max_length="40" name="serial_number" type="string"/>
+        <element label="Service Required" max_length="400" name="service_required" type="string"/>
+        <element label="Software Application" max_length="32" name="software_app" type="string"/>
+        <element label="Software License" max_length="40" name="software_license" type="string"/>
+        <element label="Software Version" max_length="40" name="software_version" type="string"/>
         <element hint="Please enter a URL here." label="User Manual" max_length="250" name="user_manual" type="string"/>
         <element label="Manufacture Date" max_length="40" name="u_glide_date_1" type="glide_date"/>
+        <element label="Email Address" max_length="40" name="vendor_email" type="string"/>
         <index name="index">
-            <element name="instrument_id"/>
+            <element name="software_app"/>
         </index>
         <index name="index2">
-            <element name="instrument_id"/>
+            <element name="computer"/>
         </index>
         <index name="index3">
+            <element name="instrument_id"/>
+        </index>
+        <index name="index4">
+            <element name="instrument_id"/>
+        </index>
+        <index name="index5">
             <element name="room"/>
         </index>
     </element>

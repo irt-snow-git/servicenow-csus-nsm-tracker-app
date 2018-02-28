@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="knowledge_links" label="Knowledge Base Links" language="en" table="x_casus_nsm_issue_instrument">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>knowledge_links</element>
+            <help/>
+            <hint/>
+            <label>Knowledge Base Links</label>
+            <language>en</language>
+            <name>x_casus_nsm_issue_instrument</name>
+            <plural>Knowledge Base Links</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>nicholasmyers</sys_created_by>
+            <sys_created_on>2018-02-12 17:26:13</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>217b4cf00f145f0012e4348ce1050ead</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Knowledge Base Links</sys_name>
+            <sys_package display_value="NSM Issue Tracker" source="x_casus_nsm_issue">510636e76fea3200ad6cd4a21c3ee48c</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="NSM Issue Tracker">510636e76fea3200ad6cd4a21c3ee48c</sys_scope>
+            <sys_update_name>sys_documentation_x_casus_nsm_issue_instrument_knowledge_links_en</sys_update_name>
+            <sys_updated_by>nicholasmyers</sys_updated_by>
+            <sys_updated_on>2018-02-12 17:26:13</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
